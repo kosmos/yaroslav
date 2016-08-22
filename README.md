@@ -1,3 +1,14 @@
+Учебный проект "Сайт Ярослава Мудрого"
+=========
+
+Учебная работа команды №1 в рамках курса Projector Frontend Advanced.
+
+#Задача
+
+Необходимо сверстать следующий сайт:
+
+https://www.dropbox.com/sh/0bn2btrharxxwc5/AADBEIsdp1aP2aTjs4646DB2a?dl=0
+
 #How to use
 
 Clone this repo and then in command line type:
