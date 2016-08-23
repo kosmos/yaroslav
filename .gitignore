@@ -30,3 +30,8 @@ nbproject
 _tmp
 node_modules
 bower_components
+build
+
+# Generated files
+src/sprite.html
+src/sass/generated/

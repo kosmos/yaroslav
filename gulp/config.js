@@ -18,6 +18,7 @@ var config = {
         img          : 'src/img',
         svg          : 'src/img/svg',
         icons        : 'src/icons',
+        data         : 'src/data',
         // path to png sources for sprite:png task
         iconsPng     : 'src/icons',
         // path to svg sources for sprite:svg task
@@ -34,7 +35,8 @@ var config = {
         js   : destPath + '/js',
         img  : destPath + '/img',
         fonts: destPath + '/fonts',
-        lib  : destPath + '/lib'
+        lib  : destPath + '/lib',
+        data : destPath + '/data'
     },
 
     setEnv: function(env) {
