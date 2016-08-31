@@ -5,6 +5,7 @@ var postcss      = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var mqpacker     = require('css-mqpacker');
 var config       = require('../config');
+var sassLint     = require('gulp-sass-lint');
 
 var processors = [
     autoprefixer({
@@ -58,3 +59,12 @@ function sortMediaQueries(a, b) {
 
     return 1;
 }
+
+gulp.task('sassLint', function() {
+
+    return gulp.src('src/sass/**/*.s+(a|c)ss')
+        .pipe(sassLint())
+        .pipe(sassLint.format())
+        .pipe(sassLint.failOnError())
+
+});
