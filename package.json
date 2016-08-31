@@ -1,6 +1,7 @@
 {
   "name": "yaroslav",
   "version": "0.1.0",
+  "sasslintConfig": "sass-lint.yml",
   "scripts": {
     "ghpages": "git subtree push --prefix dist origin gh-pages",
     "build": "gulp build --production",
@@ -42,6 +43,7 @@
     "lodash": "^4.3.0",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.5",
+    "sass-lint": "^1.9.1",
     "through2": "^2.0.1",
     "vinyl-buffer": "^1.0.0",
     "webpack": "^1.12.12"
