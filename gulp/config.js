@@ -1,6 +1,8 @@
 var util = require('gulp-util');
 
 var production = util.env.production || util.env.prod || false;
+
+var devPath = 'src';
 var destPath = 'build';
 
 var config = {
@@ -8,25 +10,26 @@ var config = {
     production: production,
 
     src: {
-        root         : 'src',
-        templates    : 'src/templates',
-        templatesData: 'src/templates/data',
-        sass         : 'src/sass',
+        root         : devPath,
+        templates    : devPath + '/templates',
+        templatesData: devPath + '/templates/data',
+        sass         : devPath + '/sass',
         // path for sass files that will be generated automatically via some of tasks
-        sassGen      : 'src/sass/generated',
-        js           : 'src/js',
-        img          : 'src/img',
-        svg          : 'src/img/svg',
-        icons        : 'src/icons',
-        data         : 'src/data',
+        sassGen      : devPath + '/sass/generated',
+        js           : devPath + '/js',
+        img          : devPath + '/img',
+        svg          : devPath + '/img/svg',
+        icons        : devPath + '/icons',
+        data         : devPath + '/data',
         // path to png sources for sprite:png task
-        iconsPng     : 'src/icons',
+        iconsPng     : devPath + '/icons',
         // path to svg sources for sprite:svg task
-        iconsSvg     : 'src/icons',
+        iconsSvg     : devPath + '/icons',
         // path to svg sources for iconfont task
-        iconsFont    : 'src/icons',
-        fonts        : 'src/fonts',
-        lib          : 'src/lib'
+        iconsFont    : devPath + '/icons',
+        fonts        : devPath + '/fonts',
+        lib          : devPath + '/lib',
+        blocks       : devPath + '/blocks'
     },
     dest: {
         root : destPath,

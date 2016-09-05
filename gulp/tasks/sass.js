@@ -1,5 +1,6 @@
 var gulp         = require('gulp');
 var sass         = require('gulp-sass');
+var include      = require("gulp-include");
 var sourcemaps   = require('gulp-sourcemaps');
 var postcss      = require('gulp-postcss');
 var csso         = require('postcss-csso');
@@ -27,6 +28,7 @@ var processors = [
 gulp.task('sass', function() {
     return gulp
         .src(config.src.sass + '/*.{sass,scss}')
+        .pipe(include())
         .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: config.production ? 'compact' : 'expanded', // nested, expanded, compact, compressed
@@ -39,7 +41,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('sass:watch', function() {
-    gulp.watch(config.src.sass + '/**/*.{sass,scss}', ['sass']);
+    gulp.watch([config.src.sass + '/**/*.{sass,scss}', config.src.blocks + '/**/*.{sass,scss}'], ['sass']);
 });
 
 function isMax(mq) {
