@@ -2,11 +2,13 @@ var gulp         = require('gulp');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var postcss      = require('gulp-postcss');
+var csso         = require('postcss-csso');
 var autoprefixer = require('autoprefixer');
 var mqpacker     = require('css-mqpacker');
 var config       = require('../config');
 var sassLint     = require('gulp-sass-lint');
 
+// Processors for scss task
 var processors = [
     autoprefixer({
         browsers: ['last 4 versions'],
@@ -14,6 +16,11 @@ var processors = [
     }),
     mqpacker({
         sort: sortMediaQueries
+    }),
+    csso({
+        restructure: true,
+        sourceMap: true,
+        debug: true
     })
 ];
 
