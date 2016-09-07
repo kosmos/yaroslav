@@ -11,5 +11,6 @@ gulp.task('watch',
     'svgo:watch',
     'webpack:watch',
     'sass:watch',
+    'sassLint:watch',
     'yaml:watch'
 ]);

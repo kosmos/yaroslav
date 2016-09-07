@@ -2,7 +2,7 @@ options:
   formatter: stylish
   merge-default-rules: false
 files:
-  include: 'src/sass/temp/**/*.s+(a|c)ss'
+  include: 'src/blocks/**/*.s+(a|c)ss'
 rules:
   #Documantation: https://github.com/sasstools/sass-lint/tree/develop/docs/rules
   bem-depth:

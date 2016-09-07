@@ -10,6 +10,7 @@ function build(cb) {
         'sprite:png',
         'svgo',
         'sass',
+        'sassLint',
         'yaml',
         'jade',
         'webpack',

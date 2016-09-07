@@ -29,14 +29,6 @@ gulp.task('sass', function() {
     return gulp
         .src(config.src.sass + '/*.{sass,scss}')
         .pipe(include())
-        .pipe(gulp.dest('src/sass/temp'))
-        .pipe(sassLint(
-            {
-                configFile: '.sassLintConfig.yml'
-            }
-        ))
-        .pipe(sassLint.format())
-        .pipe(sassLint.failOnError())
         .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: config.production ? 'compact' : 'expanded', // nested, expanded, compact, compressed
@@ -76,3 +68,19 @@ function sortMediaQueries(a, b) {
 
     return 1;
 }
+
+gulp.task('sassLint', function() {
+    return gulp
+        .src(config.src.blocks + '/**/*.{sass,scss}')
+        .pipe(sassLint(
+            {
+                configFile: '.sassLintConfig.yml'
+            }
+        ))
+        .pipe(sassLint.format())
+        .pipe(sassLint.failOnError())
+});
+
+gulp.task('sassLint:watch', function() {
+    gulp.watch([config.src.blocks + '/**/*.{sass,scss}'], ['sassLint']);
+});
