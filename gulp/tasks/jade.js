@@ -9,7 +9,7 @@ var config      = require('../config');
 
 function renderHtml(onlyChanged) {
     return gulp
-        .src([config.src.templates + '/[^_]*.jade'])
+        .src([config.src.templates + '/*.jade'])
         .pipe(plumber({ errorHandler: config.errorHandler }))
         .pipe(gulpif(onlyChanged, changed(config.dest.html, { extension: '.html' })))
         .pipe(frontMatter({ property: 'data' }))
@@ -33,6 +33,6 @@ gulp.task('jade:changed', function() {
 });
 
 gulp.task('jade:watch', function() {
-    gulp.watch([config.src.templates + '/**/_*.jade'], ['jade']);
-    gulp.watch([config.src.templates + '/**/[^_]*.jade'], ['jade:changed']);
+    gulp.watch([config.src.blocks + '/**/*.jade'], ['jade']);
+    gulp.watch([config.src.templates + '/**/*.jade'], ['jade:changed']);
 });
