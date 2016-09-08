@@ -1,5 +1,6 @@
 var gulp        = require('gulp');
 var jade        = require('gulp-jade');
+var include     = require("gulp-include");
 var plumber     = require('gulp-plumber');
 var changed     = require('gulp-changed');
 var gulpif      = require('gulp-if');
@@ -10,6 +11,7 @@ var config      = require('../config');
 function renderHtml(onlyChanged) {
     return gulp
         .src([config.src.templates + '/[^_]*.jade'])
+        .pipe(include())
         .pipe(plumber({ errorHandler: config.errorHandler }))
         .pipe(gulpif(onlyChanged, changed(config.dest.html, { extension: '.html' })))
         .pipe(frontMatter({ property: 'data' }))
