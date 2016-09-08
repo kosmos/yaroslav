@@ -10,7 +10,7 @@ gulp.task('watch',
     'sprite:png:watch',
     'svgo:watch',
     'webpack:watch',
-    'sass:watch',
     'sassLint:watch',
+    'sass:watch',
     'yaml:watch'
 ]);

@@ -71,7 +71,7 @@ function sortMediaQueries(a, b) {
 
 gulp.task('sassLint', function() {
     return gulp
-        .src(config.src.blocks + '/**/*.{sass,scss}')
+        .src(config.src.root + '/**/[^_]*.{sass,scss}')
         .pipe(sassLint(
             {
                 configFile: '.sassLintConfig.yml'
@@ -82,5 +82,5 @@ gulp.task('sassLint', function() {
 });
 
 gulp.task('sassLint:watch', function() {
-    gulp.watch([config.src.blocks + '/**/*.{sass,scss}'], ['sassLint']);
+    gulp.watch([config.src.root + '/**/[^_]*.{sass,scss}'], ['sassLint']);
 });
