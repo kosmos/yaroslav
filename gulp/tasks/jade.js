@@ -16,7 +16,7 @@ function renderHtml(onlyChanged) {
         .pipe(jade())
         .pipe(prettify({
             indent_size: 2,
-            wrap_attributes: 'auto', // 'force'
+            wrap_attributes: 'auto', //'force'
             preserve_newlines: true,
             // unformatted: [],
             end_with_newline: true
