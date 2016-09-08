@@ -10,7 +10,7 @@ var config      = require('../config');
 
 function renderHtml(onlyChanged) {
     return gulp
-        .src([config.src.templates + '/[^_]*.jade'])
+        .src([config.src.templates + '/[^_]*.jade', config.src.blocks + '/[^_]*.jade'])
         .pipe(include())
         .pipe(plumber({ errorHandler: config.errorHandler }))
         .pipe(gulpif(onlyChanged, changed(config.dest.html, { extension: '.html' })))
@@ -35,6 +35,6 @@ gulp.task('jade:changed', function() {
 });
 
 gulp.task('jade:watch', function() {
-    gulp.watch([config.src.templates + '/**/_*.jade'], ['jade']);
+    gulp.watch([config.src.templates + '/**/_*.jade', config.src.blocks + '/**/*.jade'], ['jade']);
     gulp.watch([config.src.templates + '/**/[^_]*.jade'], ['jade:changed']);
 });
