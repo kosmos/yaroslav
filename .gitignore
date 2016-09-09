@@ -36,3 +36,6 @@ build
 # Generated files
 src/sprite.html
 src/sass/generated/
+
+# Test files
+ttest*
