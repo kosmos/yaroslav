@@ -49,5 +49,6 @@
     "through2": "^2.0.1",
     "vinyl-buffer": "^1.0.0",
     "webpack": "^1.12.12"
-  }
+  },
+  "dependencies": {}
 }

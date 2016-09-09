@@ -1,20 +1,25 @@
-var gulp        = require('gulp');
-var jade        = require('gulp-jade');
-var include     = require("gulp-include");
-var plumber     = require('gulp-plumber');
-var changed     = require('gulp-changed');
-var gulpif      = require('gulp-if');
+var gulp = require('gulp');
+var jade = require('gulp-jade');
+var include = require("gulp-include");
+var plumber = require('gulp-plumber');
+var changed = require('gulp-changed');
+var gulpif = require('gulp-if');
 var frontMatter = require('gulp-front-matter');
-var prettify    = require('gulp-prettify');
-var config      = require('../config');
+var prettify = require('gulp-prettify');
+var config = require('../config');
 
 function renderHtml(onlyChanged) {
     return gulp
         .src([config.src.templates + '/[^_]*.jade', config.src.blocks + '/[^_]*.jade'])
-        .pipe(include())
-        .pipe(plumber({ errorHandler: config.errorHandler }))
-        .pipe(gulpif(onlyChanged, changed(config.dest.html, { extension: '.html' })))
-        .pipe(frontMatter({ property: 'data' }))
+        .pipe(plumber({
+            errorHandler: config.errorHandler
+        }))
+        .pipe(gulpif(onlyChanged, changed(config.dest.html, {
+            extension: '.html'
+        })))
+        .pipe(frontMatter({
+            property: 'data'
+        }))
         .pipe(jade())
         .pipe(prettify({
             indent_size: 2,
