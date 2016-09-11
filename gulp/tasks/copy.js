@@ -1,5 +1,10 @@
 var gulp   = require('gulp');
 var config = require('../config.js');
+var flatten = require('gulp-flatten');
+var plumber = require('gulp-plumber');
+var imagemin = require('gulp-imagemin');
+//var imageminPngquant = require('imagemin-pngquant');
+var changed = require('gulp-changed');
 
 gulp.task('copy:fonts', function() {
     return gulp
@@ -23,8 +28,23 @@ gulp.task('copy:img', function() {
     return gulp
         .src([
             config.src.img + '/**/*.{jpg,png,jpeg,svg,gif}',
+            config.src.blocks + '/**/*.{jpg,png,jpeg,svg,gif}',
             '!' + config.src.img + '/svgo/**/*.*'
         ])
+        .pipe(plumber({
+            errorHandler: config.errorHandler
+        }))
+        .pipe(changed('build/img'))
+/*        .pipe(imagemin({
+            optimizationLevel: 3,
+            progressive: true,
+            interlaced: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [
+                imageminPngquant()
+            ]
+        }))*/
+        .pipe(flatten())
         .pipe(gulp.dest(config.dest.img));
 });
 
@@ -35,5 +55,5 @@ gulp.task('copy', [
     'copy:fonts'
 ]);
 gulp.task('copy:watch', function() {
-    gulp.watch(config.src.img+'/*', ['copy']);
+    gulp.watch([config.src.img+'/*',config.src.blocks + '/**/*.{jpg,png,jpeg,svg,gif}'], ['copy']);
 });
