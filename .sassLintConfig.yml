@@ -11,7 +11,7 @@ rules:
 
   class-name-format:
     - 1
-    - convention: hyphenatedbem
+    - convention: strictbem
 
   border-zero:
     - 1
@@ -57,7 +57,7 @@ rules:
 
   variable-name-format:
     - 1
-    - convention: hyphenatedbem
+    - convention: strictbem
 
   zero-unit:
     - 1
