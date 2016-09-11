@@ -3,7 +3,6 @@ var config = require('../config.js');
 var flatten = require('gulp-flatten');
 var plumber = require('gulp-plumber');
 var imagemin = require('gulp-imagemin');
-//var imageminPngquant = require('imagemin-pngquant');
 var changed = require('gulp-changed');
 
 gulp.task('copy:fonts', function() {
@@ -35,15 +34,6 @@ gulp.task('copy:img', function() {
             errorHandler: config.errorHandler
         }))
         .pipe(changed('build/img'))
-/*        .pipe(imagemin({
-            optimizationLevel: 3,
-            progressive: true,
-            interlaced: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [
-                imageminPngquant()
-            ]
-        }))*/
         .pipe(flatten())
         .pipe(gulp.dest(config.dest.img));
 });
