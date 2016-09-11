@@ -32,6 +32,7 @@ _tmp
 node_modules
 bower_components
 build
+.publish
 
 # Generated files
 src/sprite.html
