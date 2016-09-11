@@ -59,9 +59,33 @@ We have several useful flags.
 * `gulp --tunnel=[name]` or `gulp server --tunnel [name]` - runs dev server and allows you to easily share a web service on your local development machine (powered by [localtunnel.me](https://localtunnel.me/)). Your local site will be available at `[name].localtunnel.me`.
 * `gulp [task_name] --prod` or `gulp [task_name] --production` - run task in production mode. Some of the tasks (like, sass or js compilation) have additional settings for production mode (such as code minification), so with this flag you can force production mode. `gulp build` uses this mode by default.
 
-##Other
+## Other
 You can also use [npm scripts](https://docs.npmjs.com/misc/scripts):
 
 * `npm run ghpages` to push only `./dist` folder to **gh-pages** branch on github (very useful for previews).
 * `npm run start` - same as `gulp default`.
 * `npm run build` - same as `gulp build`.
+* `npm run b <blockName>` creates an empty blockName with a help of technologies, such as jade and scss.
+* `npm run b <blockName>` js yml json - creates an empty block with a help of jade and scss and also using additional technologies: js, yml and json;
+* `npm run rb <blockName>` - Use to delete a block.nologies: js, yml and json;
+* `npm run rb <blockName>` - Use to delete a block.
+
+## Files and folders structure
+
+```
+gulp-front/                             # Project root
+├── build                               # Compiled files
+├── gulp                                # Gulp tasks
+├── src                                 # Source files
+│   ├── blocks                          # Modules folder
+│   ├── data                            #
+│   └── fonts                           # Fonts files
+├── package.json                        # Dependencies for node.js
+├── gulpfile.js                         # gulp.js config
+├── LICENSE                             # License
+└── README.md                           # File you read
+```
+
+
+## License
+[The MIT License (MIT)](LICENSE)
