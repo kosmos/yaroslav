@@ -9,7 +9,7 @@ let filePath = basePath + blockName;
 
 if (blockName) {
 	deleteFolderRecursive(filePath);
-	console.log('Модуль "' + blockName + '" удален!');
+	console.log('Блок "' + blockName + '" удален!');
 }
 
 function deleteFolderRecursive (path) {

@@ -21,8 +21,8 @@ let templates = [
 		},
 		{
 			type: 'necessary',
-			ext: 'styl',
-			tpl: '.{blockName}\n\t//\n'
+			ext: 'scss',
+			tpl: '.{blockName} {\n\t//\n}\n'
 		},
 		{
 			type: 'optional',
