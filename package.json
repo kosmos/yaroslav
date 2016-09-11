@@ -4,7 +4,9 @@
   "scripts": {
     "ghpages": "git subtree push --prefix dist origin gh-pages",
     "build": "gulp build --production",
-    "start": "gulp"
+    "start": "gulp",
+    "amo": "node tools/block/add.js",
+    "rmo": "node tools/block/remove.js"
   },
   "authors": "buschidos <sergey.snjozyk@gmail.com>",
   "devDependencies": {
