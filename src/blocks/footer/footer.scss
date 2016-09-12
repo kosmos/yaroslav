@@ -1,0 +1,15 @@
+.footer {
+	//
+	text-align: center;
+
+	&__qoute {
+
+		&::before {
+			content: "\"";
+		}
+
+		&::after {
+			content: "\"";
+		}
+	}
+}
