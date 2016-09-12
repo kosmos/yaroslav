@@ -1,3 +1,11 @@
+$desktop: "(min-width: 1024px)";
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$mobilerotated: "(min-width: 520px) and (max-width: 767px)";
+$mobile: "(min-width: 320px) and (max-width: 519px)";
+
+
+
+
 .centeredtext {
     text-align: center;
     width: 100%;
@@ -9,11 +17,6 @@
 
 .centeredtext_font_opensans {
     font-family: 'Open Sans', sans-serif;
-}
-
-.centeredtext__dateup {
-    position:relative;
-    top:-0px;
 }
 
 .centeredtext_uppercase {
@@ -28,16 +31,8 @@
     color: #999999;
 }
 
-.centeredtext_size_dates {
-    font-size: 120px;
-}
-
 .centeredtext_size_38px {
     font-size: 38px;
-}
-
-.centeredtext__dateup_size_115px {
-    font-size: 115px;
 }
 
 .centeredtext_paddingtop_5perc {
@@ -48,10 +43,56 @@
     padding-top: 10%;
 }
 
-.centeredtext_paddingtop_20perc {
-    padding-top: 10%;
-}
-
 .centeredtext_letterspacing_2 {
     letter-spacing: 5px;
 }
+
+
+@media #{$tablet} {
+    .centeredtext {
+        font-size: 18px;
+    }
+
+    .centeredtext_size_38px {
+        font-size: 28px;
+    }
+}
+
+@media #{$mobilerotated} {
+    .centeredtext {
+        font-size: 18px;
+    }
+
+    .centeredtext_size_38px {
+        font-size: 20px;
+    }
+
+    .centeredtext_paddingtop_10perc {
+        padding-top: 5%;
+    }
+
+    .centeredtext_paddingtop_5perc {
+        padding-top: 2%;
+    }
+}
+
+
+@media #{$mobile} {
+    .centeredtext {
+        font-size: 12px;
+    }
+
+    .centeredtext_size_38px {
+        font-size: 10px;
+    }
+
+    .centeredtext_paddingtop_10perc {
+        padding-top: 5%;
+    }
+
+    .centeredtext_paddingtop_5perc {
+        padding-top: 2%;
+    }
+}
+
+
