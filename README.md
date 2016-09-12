@@ -30,6 +30,7 @@ Task name          | Description
 `default`          | will start all tasks required by project in dev mode: initial build, watch files, run server with livereload
 `build:dev`        | build dev version of project (without code optimizations)
 `build`            | build production-ready project (with code optimizations)
+`deploy`           | build production-ready project and push only `./build` folder to **gh-pages** branch on github
 
 ### Other tasks
 Task name          | Description                                                      
