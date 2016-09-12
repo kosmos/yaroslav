@@ -1,8 +1,57 @@
 .centeredtext {
     text-align: center;
     width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+}
+
+.centeredtext_font_opensans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.centeredtext__dateup {
+    position:relative;
+    top:-0px;
+}
+
+.centeredtext_uppercase {
+    text-transform: uppercase;
+}
+
+.centeredtext_color_cc9933 {
+    color: #cc9933;
+}
+
+.centeredtext_color_999999 {
+    color: #999999;
+}
+
+.centeredtext_size_dates {
+    font-size: 120px;
+}
+
+.centeredtext_size_38px {
+    font-size: 38px;
+}
+
+.centeredtext__dateup_size_115px {
+    font-size: 115px;
 }
 
 .centeredtext_paddingtop_5perc {
     padding-top: 5%;
+}
+
+.centeredtext_paddingtop_10perc {
+    padding-top: 10%;
+}
+
+.centeredtext_paddingtop_20perc {
+    padding-top: 10%;
+}
+
+.centeredtext_letterspacing_2 {
+    letter-spacing: 5px;
 }
