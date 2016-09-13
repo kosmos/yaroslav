@@ -1,0 +1,98 @@
+$desktop: "(min-width: 1024px)";
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$mobilerotated: "(min-width: 520px) and (max-width: 767px)";
+$mobile: "(min-width: 320px) and (max-width: 519px)";
+
+
+
+
+.centeredtext {
+    text-align: center;
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+}
+
+.centeredtext_font_opensans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.centeredtext_uppercase {
+    text-transform: uppercase;
+}
+
+.centeredtext_color_cc9933 {
+    color: #cc9933;
+}
+
+.centeredtext_color_999999 {
+    color: #999999;
+}
+
+.centeredtext_size_38px {
+    font-size: 38px;
+}
+
+.centeredtext_paddingtop_5perc {
+    padding-top: 5%;
+}
+
+.centeredtext_paddingtop_10perc {
+    padding-top: 10%;
+}
+
+.centeredtext_letterspacing_2 {
+    letter-spacing: 5px;
+}
+
+
+@media #{$tablet} {
+    .centeredtext {
+        font-size: 18px;
+    }
+
+    .centeredtext_size_38px {
+        font-size: 28px;
+    }
+}
+
+@media #{$mobilerotated} {
+    .centeredtext {
+        font-size: 18px;
+    }
+
+    .centeredtext_size_38px {
+        font-size: 20px;
+    }
+
+    .centeredtext_paddingtop_10perc {
+        padding-top: 5%;
+    }
+
+    .centeredtext_paddingtop_5perc {
+        padding-top: 2%;
+    }
+}
+
+
+@media #{$mobile} {
+    .centeredtext {
+        font-size: 12px;
+    }
+
+    .centeredtext_size_38px {
+        font-size: 10px;
+    }
+
+    .centeredtext_paddingtop_10perc {
+        padding-top: 5%;
+    }
+
+    .centeredtext_paddingtop_5perc {
+        padding-top: 2%;
+    }
+}
+
+
