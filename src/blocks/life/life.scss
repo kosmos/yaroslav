@@ -1,9 +1,14 @@
+$desktop: "(min-width: 1024px)";
+$tablet: "(min-width: 768px) and (max-width: 1023px)";
+$mobilerotated: "(min-width: 520px) and (max-width: 767px)";
+$mobile: "(min-width: 320px) and (max-width: 519px)";
+
 .life {
     position: absolute;
     width: 100%;
     height: 0px;
     padding-bottom:66%;
-    /*border: 3px solid #c02a29;*/
+    //border: 3px solid #c02a29;
 }
 
 .life__img1 {
@@ -15,5 +20,18 @@
     width: 65%;
     float: left;
     height: 100%;
+}
+
+@media #{$mobile} {
+
+.life__img1 {
+    width: 100%;
+}
+
+.life__textarea {
+    width: 100%;
+}
+
+
 }
 
