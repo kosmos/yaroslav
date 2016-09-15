@@ -9,6 +9,9 @@ var mqpacker     = require('css-mqpacker');
 var config       = require('../config');
 var sassLint     = require('gulp-sass-lint');
 
+var debug = require('postcss-debug').createDebugger()
+
+
 // Processors for scss task
 var processors = [
     autoprefixer({
@@ -35,7 +38,7 @@ gulp.task('sass', function() {
             precision: 5
         }))
         .on('error', config.errorHandler)
-        .pipe(postcss(processors))
+        .pipe(postcss(debug(processors)))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(config.dest.css));
 });
@@ -43,6 +46,11 @@ gulp.task('sass', function() {
 gulp.task('sass:watch', function() {
     gulp.watch([config.src.sass + '/**/*.{sass,scss}', config.src.blocks + '/**/*.{sass,scss}'], ['sass']);
 });
+
+gulp.task('css-debug', ['sass'], function () {
+    // 3rd change: open the web inspector
+    debug.inspect()
+})
 
 function isMax(mq) {
     return /max-width/.test(mq);
