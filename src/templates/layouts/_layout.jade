@@ -8,9 +8,11 @@ html
 
   body(class=bodyClass)
     //BEGIN out
-    .out(class=outClass)
-      block content
-    //END out
+    +header
+
+    block content
+
+    +footer
 
     //LOAD SCRIPTS
     block scripts
