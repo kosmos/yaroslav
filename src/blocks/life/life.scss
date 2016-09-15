@@ -1,14 +1,7 @@
-$desktop: "(min-width: 1024px)";
-$tablet: "(min-width: 768px) and (max-width: 1023px)";
-$mobilerotated: "(min-width: 520px) and (max-width: 767px)";
-$mobile: "(min-width: 320px) and (max-width: 519px)";
-
 .life {
-    position: absolute;
     width: 100%;
     height: 0px;
-    padding-bottom:66%;
-    //border: 3px solid #c02a29;
+    padding-bottom:53%;
 }
 
 .life__img1 {
@@ -34,4 +27,3 @@ $mobile: "(min-width: 320px) and (max-width: 519px)";
 
 
 }
-
