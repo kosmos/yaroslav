@@ -1,0 +1,40 @@
+.livedates {
+    text-align: center;
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+    font-size: 120px;
+    font-family: #{$font1}, #{$font1attr};
+    color: #{$color1};
+    padding-top: 10%;
+}
+
+.livedates__dateup {
+    position:relative;
+    top:-0px;
+}
+
+.livedates__dateup_size_115px {
+    font-size: 115px;
+}
+
+@media #{$tablet} {
+    .livedates {
+        font-size: 60px;
+    }
+
+    .livedates__dateup_size_115px {
+        font-size: 55px;
+    }
+}
+
+@media #{$mobile} {
+    .livedates {
+        font-size: 16px;
+        padding-top: 3%;
+    }
+
+    .livedates__dateup_size_115px {
+        font-size: 14px;
+    }
+}
