@@ -1,12 +1,12 @@
 .years__name {
     font-size: 44px;
     padding-top: 3%;
-    font-family: 'Playfair Display', serif;
+    font-family: #{$font1}, #{$font1attr};
 }
 
 .years__value {
     font-size: 28px;
-    font-family: 'Playfair Display', serif;
+    font-family: #{$font1}, #{$font1attr};
 }
 
 .years__date {
@@ -25,7 +25,7 @@
 
 .years__details {
     padding-top: 50px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: #{$font2}, #{$font2attr};
 }
 
 .years_position_left {
@@ -41,5 +41,5 @@
 
 .years__details_paddingtop_74px {
     padding-top: 74px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: #{$font2}, #{$font2attr};
 }

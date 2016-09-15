@@ -10,11 +10,11 @@ $mobile: "(min-width: 320px) and (max-width: 519px)";
     padding-left: auto;
     padding-right: auto;
     font-size: 22px;
-    font-family: 'Playfair Display', serif;
+    font-family: #{$font1}, #{$font1attr};
 }
 
 .centeredtext_font_opensans {
-    font-family: 'Open Sans', sans-serif;
+    font-family: #{$font2}, #{$font2attr};
 }
 
 .centeredtext_uppercase {
@@ -22,11 +22,11 @@ $mobile: "(min-width: 320px) and (max-width: 519px)";
 }
 
 .centeredtext_color_cc9933 {
-    color: #cc9933;
+    color: #{$color1};
 }
 
 .centeredtext_color_999999 {
-    color: #999999;
+    color: #{$color2};
 }
 
 .centeredtext_size_38px {
@@ -56,24 +56,6 @@ $mobile: "(min-width: 320px) and (max-width: 519px)";
     }
 }
 
-@media #{$mobilerotated} {
-    .centeredtext {
-        font-size: 18px;
-    }
-
-    .centeredtext_size_38px {
-        font-size: 20px;
-    }
-
-    .centeredtext_paddingtop_10perc {
-        padding-top: 5%;
-    }
-
-    .centeredtext_paddingtop_5perc {
-        padding-top: 2%;
-    }
-}
-
 
 @media #{$mobile} {
     .centeredtext {
@@ -90,16 +72,5 @@ $mobile: "(min-width: 320px) and (max-width: 519px)";
 
     .centeredtext_paddingtop_5perc {
         padding-top: 2%;
-    }
-}
-
-
-@media #{$desctopsmall} {
-    .centeredtext_paddingtop_10perc {
-        padding-top: 2%;
-    }
-
-    .centeredtext_paddingtop_5perc {
-        padding-top: 1%;
     }
 }
