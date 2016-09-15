@@ -1,0 +1,45 @@
+.years__name {
+    font-size: 44px;
+    padding-top: 3%;
+    font-family: #{$font1}, #{$font1attr};
+}
+
+.years__value {
+    font-size: 28px;
+    font-family: #{$font1}, #{$font1attr};
+}
+
+.years__date {
+    font-size: 128px;
+    line-height: 0.8;
+}
+
+.years__datetext {
+    position:relative;
+    top: 15px;
+}
+
+.years__datetext_top_35px {
+    top: 35px;
+}
+
+.years__details {
+    padding-top: 50px;
+    font-family: #{$font2}, #{$font2attr};
+}
+
+.years_position_left {
+    float: left;
+    margin-left: 20%;
+}
+
+.years_position_right {
+    float: right;
+    margin-top: 129px;
+    margin-right: 20%;
+}
+
+.years__details_paddingtop_74px {
+    padding-top: 74px;
+    font-family: #{$font2}, #{$font2attr};
+}
