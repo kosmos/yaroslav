@@ -11,66 +11,62 @@ $mobile: "(min-width: 320px) and (max-width: 519px)";
     padding-right: auto;
     font-size: 22px;
     font-family: #{$font1}, #{$font1attr};
-}
 
-.centeredtext_font_opensans {
-    font-family: #{$font2}, #{$font2attr};
-}
-
-.centeredtext_uppercase {
-    text-transform: uppercase;
-}
-
-.centeredtext_color_cc9933 {
-    color: #{$color1};
-}
-
-.centeredtext_color_999999 {
-    color: #{$color2};
-}
-
-.centeredtext_size_38px {
-    font-size: 38px;
-}
-
-.centeredtext_paddingtop_5perc {
-    padding-top: 5%;
-}
-
-.centeredtext_paddingtop_10perc {
-    padding-top: 10%;
-}
-
-.centeredtext_letterspacing_2 {
-    letter-spacing: 5px;
-}
-
-
-@media #{$tablet} {
-    .centeredtext {
-        font-size: 18px;
+    &_font_opensans {
+        font-family: #{$font2}, #{$font2attr};
     }
 
-    .centeredtext_size_38px {
-        font-size: 28px;
-    }
-}
-
-
-@media #{$mobile} {
-    .centeredtext {
-        font-size: 12px;
+    &_uppercase {
+        text-transform: uppercase;
     }
 
-    .centeredtext_size_38px {
-        font-size: 10px;
+    &_color_cc9933 {
+        color: #{$color1};
     }
 
-    .centeredtext_paddingtop_10perc {
+    &_color_999999 {
+        color: #{$color2};
+    }
+
+    &_size_38px {
+        font-size: 38px;
+    }
+
+    &_paddingtop_5perc {
         padding-top: 5%;
     }
 
-    .centeredtext_paddingtop_5perc {
-        padding-top: 2%;
+    &_paddingtop_10perc {
+        padding-top: 10%;
+    }
+
+    &_letterspacing_2 {
+        letter-spacing: 5px;
+    }
+    @media #{$tablet} {
+        & {
+            font-size: 18px;
+        }
+
+        &_size_38px {
+            font-size: 28px;
+        }
+    }
+    @media #{$mobile} {
+        & {
+            font-size: 12px;
+        }
+
+        &_size_38px {
+            font-size: 10px;
+        }
+
+        &_paddingtop_10perc {
+            padding-top: 5%;
+        }
+
+        &_paddingtop_5perc {
+            padding-top: 2%;
+        }
     }
 }
