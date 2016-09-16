@@ -7,34 +7,34 @@
     font-family: #{$font1}, #{$font1attr};
     color: #{$color1};
     padding-top: 10%;
-}
 
-.livedates__dateup {
-    position:relative;
-    top:-0px;
-}
-
-.livedates__dateup_size_115px {
-    font-size: 115px;
-}
-
-@media #{$tablet} {
-    .livedates {
-        font-size: 60px;
+    &__dateup {
+        position:relative;
+        top:-0px;
     }
 
-    .livedates__dateup_size_115px {
-        font-size: 55px;
-    }
-}
-
-@media #{$mobile} {
-    .livedates {
-        font-size: 16px;
-        padding-top: 3%;
+    &__dateup_size_115px {
+        font-size: 115px;
     }
 
-    .livedates__dateup_size_115px {
-        font-size: 14px;
+    @media #{$tablet} {
+        & {
+            font-size: 60px;
+        }
+
+        &__dateup_size_115px {
+            font-size: 55px;
+        }
+    }
+
+    @media #{$mobile} {
+        & {
+            font-size: 16px;
+            padding-top: 3%;
+        }
+
+        &__dateup_size_115px {
+            font-size: 14px;
+        }
     }
 }
