@@ -2,7 +2,7 @@
 var fs          = require('fs');
 var gulp        = require('gulp');
 var jade        = require('gulp-jade');
-var include     = require("gulp-include");
+var include     = require('gulp-include');
 var data        = require('gulp-data');
 var plumber     = require('gulp-plumber');
 var changed     = require('gulp-changed');
@@ -24,7 +24,7 @@ function renderHtml(onlyChanged) {
             property: 'data'
         }))
         .pipe(data(function(file) {
-            return require('../../' + config.tmp.data + '/' + config.tmp.jsonFile);
+            return JSON.parse(fs.readFileSync('./' + config.tmp.data + '/' + config.tmp.jsonFile));;
         }))
         .pipe(jade())
         .pipe(prettify({
@@ -46,6 +46,6 @@ gulp.task('jade:changed', function() {
 });
 
 gulp.task('jade:watch', function() {
-    gulp.watch([config.src.templates + '/**/_*.jade', config.src.blocks + '/**/*.jade'], ['jade']);
+    gulp.watch([config.src.templates + '/**/_*.jade', config.src.blocks + '/**/*.jade', config.tmp.data + '/' + config.tmp.jsonFile], ['jade']);
     gulp.watch([config.src.templates + '/**/[^_]*.jade'], ['jade:changed']);
 });
