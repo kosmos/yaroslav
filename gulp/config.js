@@ -4,6 +4,7 @@ var production = util.env.production || util.env.prod || false;
 
 var devPath = 'src';
 var destPath = 'build';
+var tmpPath = '.tmp';
 
 var config = {
     env       : 'development',
@@ -39,7 +40,12 @@ var config = {
         img  : destPath + '/img',
         fonts: destPath + '/fonts',
         lib  : destPath + '/lib',
-        data : destPath + '/data'
+    },
+
+    tmp: {
+        root     :  tmpPath,
+        data     :  tmpPath + '/data',
+        jsonFile :  'data.json'
     },
 
     setEnv: function(env) {
