@@ -2,6 +2,6 @@ include ../stamp/stamp
 
 mixin footer(data)
 	+b("footer").footer
-		+e("blockqoute").qoute Якщо будете в ненависті жити, у чварах і сварках, то загинете самі і погубите землю отців своїх і дідів своїх, які добули її працею своєю великою ...
-		+e.autor Ярослав Мудрий
+		+e("blockqoute").qoute #{data.quote}
+		+e.autor #{data.author}
 		+stamp

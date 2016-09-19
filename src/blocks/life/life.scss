@@ -1,29 +1,25 @@
 .life {
     width: 100%;
-    height: 0px;
-    padding-bottom:53%;
-}
+    height: 0;
+    padding-bottom: 53%;
 
-.life__img1 {
-    width: 35%;
-    float: left;
-}
+    &__img1 {
+        width: 35%;
+        float: left;
+    }
 
-.life__textarea {
-    width: 65%;
-    float: left;
-    height: 100%;
-}
+    &__textarea {
+        width: 65%;
+        float: left;
+        height: 100%;
+    }
+    @media #{$mobile} {
+        &__img1 {
+            width: 100%;
+        }
 
-@media #{$mobile} {
-
-.life__img1 {
-    width: 100%;
-}
-
-.life__textarea {
-    width: 100%;
-}
-
-
+        &__textarea {
+            width: 100%;
+        }
+    }
 }

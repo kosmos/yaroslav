@@ -17,7 +17,7 @@ let templates = [
 		{
 			type: 'necessary',
 			ext: 'jade',
-			tpl: 'mixin {blockName}(data)\n\t.{blockName}&attributes(attributes)\n\t\t\n'
+			tpl: 'mixin b_{blockName}(data)\n\t.{blockName}&attributes(attributes)\n\t\t\n'
 		},
 		{
 			type: 'necessary',

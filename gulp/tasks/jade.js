@@ -1,12 +1,15 @@
-var gulp = require('gulp');
-var jade = require('gulp-jade');
-var include = require("gulp-include");
-var plumber = require('gulp-plumber');
-var changed = require('gulp-changed');
-var gulpif = require('gulp-if');
+
+var fs          = require('fs');
+var gulp        = require('gulp');
+var jade        = require('gulp-jade');
+var include     = require("gulp-include");
+var data        = require('gulp-data');
+var plumber     = require('gulp-plumber');
+var changed     = require('gulp-changed');
+var gulpif      = require('gulp-if');
 var frontMatter = require('gulp-front-matter');
-var prettify = require('gulp-prettify');
-var config = require('../config');
+var prettify    = require('gulp-prettify');
+var config      = require('../config');
 
 function renderHtml(onlyChanged) {
     return gulp
@@ -19,6 +22,9 @@ function renderHtml(onlyChanged) {
         })))
         .pipe(frontMatter({
             property: 'data'
+        }))
+        .pipe(data(function(file) {
+            return require('../../' + config.tmp.data + '/' + config.tmp.jsonFile);
         }))
         .pipe(jade())
         .pipe(prettify({
