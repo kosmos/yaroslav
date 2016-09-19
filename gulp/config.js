@@ -35,13 +35,17 @@ var config = {
     dest: {
         root : destPath,
         html : destPath,
-        tmp  : tmpPath,
         css  : destPath + '/css',
         js   : destPath + '/js',
         img  : destPath + '/img',
         fonts: destPath + '/fonts',
         lib  : destPath + '/lib',
-        data : tmpPath + '/data'
+    },
+
+    tmp: {
+        root     :  tmpPath,
+        data     :  tmpPath + '/data',
+        jsonFile :  'data.json'
     },
 
     setEnv: function(env) {
