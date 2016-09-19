@@ -5,13 +5,13 @@ var config      = require('../config');
 function build(cb) {
     runSequence(
         'clean',
+        'yaml',
         'iconfont',
         'sprite:svg',
         'sprite:png',
         'svgo',
         'sass',
         'sassLint',
-        'yaml',
         'jade',
         'webpack',
         'copy',
