@@ -1,11 +1,68 @@
 .preview {
-    position:fixed;
-    left:0px;
-    top:0px;
-    overflow:hidden;
-    padding:0px;
-    text-align:center;
+    display: flex;
+    flex-direction: column;
     width:100%;
-    min-height:700px;
+    height: 100vh;
+    text-align: center;
     transition:all .5s ease 0s;
+    &__text{
+        text-transform: uppercase;
+        text-align: center;
+        &_gold{
+            font-family: $ya-font-family;
+            font-size: 36px;
+            font-weight: 400;
+            letter-spacing: 5px;
+            color: rgb(210, 167, 52);
+            z-index: 5;
+        }
+        &_tsn{
+            font-family: $font-open_sans, $font-family-help;
+            font-size: 14px;
+            font-weight: 200;
+            letter-spacing: 2px;
+            color: rgb(143, 139, 139);
+            line-height: 2.143;
+            z-index: 10;
+            margin: 0 0 30px 0;
+        }
+        &_link{
+            font-size: 12px;
+            text-decoration: none;
+            color: rgb(51, 51, 51);
+            line-height: 2.5;
+            z-index: 11;
+            margin: 0 0 50px 0;
+            &:before,&:after{
+                color: rgb(210, 167, 52);
+                padding: 0 7px;
+                margin-top: -1px;
+            }
+            &:before{
+                content: "{";
+            }
+            &:after{
+                content: "}";
+            }
+        }
+        &_year{
+            font-size: 18px;
+            font-family: $ya-font-family;
+            color: rgb(51, 51, 51);
+            z-index: 7;
+            margin: 150px 0 70px 0;
+            &:before, &:after{
+                background-color: rgb(204, 204, 204);
+                width: 60px;
+                height: 1px;
+                z-index: 8;
+            }
+        }
+        &_start{
+            font-size: 12px;
+            font-family: $font-open_sans, $font-family-help;
+            color: rgb(153, 153, 153);
+            z-index: 6;
+        }
+    }
 }
