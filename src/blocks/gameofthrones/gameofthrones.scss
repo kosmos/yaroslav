@@ -1,0 +1,21 @@
+.gameofthrones {
+    text-align: center;
+    font-family: #{$font-serif};
+
+    &__mainname {
+        font-size: 48px;
+        font-family: #{$font-sans-serif};
+        margin-top: 190px;
+    }
+
+    &__shortnote {
+        text-transform: uppercase;
+        color: $color2;
+        margin-top: 35px;
+    }
+
+    &__details {
+        margin-top: 35px;
+        margin-bottom: 70px;
+    }
+}

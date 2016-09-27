@@ -4,10 +4,10 @@
     padding-left: auto;
     padding-right: auto;
     font-size: 22px;
-    font-family: #{$font1}, #{$font1attr};
+    font-family: #{$font-serif};
 
     &_font_opensans {
-        font-family: #{$font2}, #{$font2attr};
+        font-family: #{$font-sans-serif};
     }
 
     &_uppercase {
