@@ -2,7 +2,24 @@
 	//
 	text-align: center;
 
+	&::before,
+	&__author::after {
+		position: relative;
+		left: 50%;
+		margin-left: -150px;
+		display: block;
+		content: "";
+		width: 300px;
+		border-top: solid 1px $color-3;
+		margin-top: 20px;
+	}
+
+
 	&__qoute {
+		font-family: $font-sans-serif;
+		font-size: 36px;
+		line-height: 60px;
+		color: $color-text-1;
 
 		&::before {
 			content: "\"";
@@ -11,5 +28,16 @@
 		&::after {
 			content: "\"";
 		}
+	}
+
+	&__author {
+		font-family: $font-serif;
+		font-size: 18px;
+		line-height: 24px;
+		color: $color-text-2;
+	}
+
+	&__stamp {
+		margin-top: 145px;
 	}
 }
