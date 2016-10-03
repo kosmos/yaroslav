@@ -2,15 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800");
 
-$font1: 'Playfair Display';
-$font1attr: serif;
-$font2: 'Open Sans';
-$font2attr: sans-serif;
-
-$font-play_fair: "Playfair Display";
-$font-open_sans: "Open Sans";
-$font-family-help: serif, sans-serif;
-$ya-font-family: $font-play_fair, $font-open_sans, $font-family-help;
+$font-serif: 'Open Sans', Arial, serif;
+$font-sans-serif: 'Playfair Display', sans-serif;
 
 
 //Colors
@@ -21,3 +14,4 @@ $color2: #999999;
 $desktop: "(min-width: 1024px)";
 $tablet: "(min-width: 768px) and (max-width: 1023px)";
 $mobile: "(min-width: 320px) and (max-width: 767px)";
+
