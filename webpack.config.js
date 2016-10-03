@@ -32,6 +32,10 @@ function createConfig(env) {
             //     filename: '[name].js',
             //     minChunks: Infinity
             // }),
+            new webpack.ProvidePlugin({
+                $: "jquery",
+                jQuery: "jquery"
+            }),
             new webpack.NoErrorsPlugin()
         ],
         resolve: {
