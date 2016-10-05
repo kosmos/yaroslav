@@ -2,12 +2,12 @@
     &__name {
          font-size: 44px;
          padding-top: 3%;
-         font-family: #{$font-serif};
+         font-family: $font-serif;
     }
 
     &__value {
         font-size: 28px;
-        font-family: #{$font-sans-serif};
+        font-family: $font-sans-serif;
     }
 
     &__date {
@@ -37,11 +37,11 @@
 
     &__details {
         padding-top: 50px;
-        font-family: #{$font-serif};
+        font-family: $font-serif;
     }
 
     &__details_paddingtop_74px {
         padding-top: 74px;
-        font-family: #{$font-serif};
+        font-family: $font-serif;
     }
 }

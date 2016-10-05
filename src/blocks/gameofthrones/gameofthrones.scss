@@ -1,10 +1,10 @@
 .gameofthrones {
     text-align: center;
-    font-family: #{$font-serif};
+    font-family: $font-serif;
 
     &__mainname {
         font-size: 48px;
-        font-family: #{$font-sans-serif};
+        font-family: $font-sans-serif;
         margin-top: 190px;
     }
 
