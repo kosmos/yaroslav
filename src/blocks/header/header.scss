@@ -30,6 +30,11 @@
         height: 32px;
         margin-right: 20px;
         color: #ffffff;
+
+        &:hover {
+            font-weight: 600;
+            opacity: .9;
+        }
     }
 
 }

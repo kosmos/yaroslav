@@ -15,7 +15,7 @@ function createConfig(env) {
     webpackConfig = {
         context: path.join(__dirname, config.src.js),
         entry: {
-            // vendor: ['jquery'],
+            vendor: ['jquery'],
             app: './app.js'
         },
         output: {
@@ -32,10 +32,10 @@ function createConfig(env) {
             //     filename: '[name].js',
             //     minChunks: Infinity
             // }),
-            new webpack.ProvidePlugin({
-                $: "jquery",
-                jQuery: "jquery"
-            }),
+            // new webpack.ProvidePlugin({
+            //     $: "jquery",
+            //     jQuery: "jquery"
+            // }),
             new webpack.NoErrorsPlugin()
         ],
         resolve: {
