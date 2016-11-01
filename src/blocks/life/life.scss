@@ -24,5 +24,124 @@
             width: 100%;
         }
     }
+
+    @media #{(min-width: 1024px) and (max-width: 1470px)} {
+
+        &__img1 {
+            width: 35%;
+        }
+
+        &__textarea {
+            width: 65%;
+        }
+    }
+
+    &__livedates {
+        text-align: center;
+        width: 100%;
+        padding-left: auto;
+        padding-right: auto;
+        font-size: 120px;
+        font-family: $font-sans-serif;
+        color: #{$color1};
+        padding-top: 10%;
+
+        &__dateup {
+            position:relative;
+            top:-0px;
+        }
+
+        &__dateup_size_115px {
+            font-size: 115px;
+        }
+
+        @media #{$tablet} {
+            & {
+                font-size: 60px;
+            }
+
+            &__dateup_size_115px {
+                font-size: 55px;
+            }
+        }
+
+        @media #{$mobile} {
+            & {
+                font-size: 16px;
+                padding-top: 3%;
+            }
+
+            &__dateup_size_115px {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__centeredtext1 {
+        text-align: center;
+        width: 100%;
+        padding-left: auto;
+        padding-right: auto;
+        font-size: 22px;
+        font-family: $font-serif;
+        padding-top: 10%;
+        text-transform: uppercase;
+        color: #{$color2};
+    }
+
+    &__centeredtext2 {
+        text-align: center;
+        width: 100%;
+        padding-left: auto;
+        padding-right: auto;
+        font-family: $font-sans-serif;
+        padding-top: 5%;
+        text-transform: uppercase;
+        color: #{$color1};
+        font-size: 38px;
+        letter-spacing: 5px;
+    }
+
+    &__centeredtext3{
+        text-align: center;
+        width: 100%;
+        padding-left: auto;
+        padding-right: auto;
+        font-size: 22px;
+        font-family: $font-serif;
+        padding-top: 5%;
+        color: #{$color2};
+    }
+
+
+/*        @media #{$tablet} {
+            & {
+                font-size: 18px;
+            }
+
+            &_size_38px {
+                font-size: 28px;
+            }
+        }*/
+
+
+/*        @media #{$mobile} {
+            & {
+                font-size: 12px;
+            }
+
+            &_size_38px {
+                font-size: 10px;
+            }
+
+            &_paddingtop_10perc {
+                padding-top: 5%;
+            }
+
+            &_paddingtop_5perc {
+                padding-top: 2%;
+            }
+        }*/
+
 }
 

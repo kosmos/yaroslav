@@ -1,0 +1,5 @@
+mixin b_timestamp(year, blocktext)
+  + b.timestamp
+    + e.text= year
+    + e.text!= blocktext
+    + e.IMG.info(src="img/timestamp__info.png")
