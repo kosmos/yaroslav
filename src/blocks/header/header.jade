@@ -1,26 +1,27 @@
 include ../preview/preview
+include ../menu/menu
 
 mixin header(data)
   +preview
   +b("header").header.small-12
-      +b.NAV.nav-menu.row
-        +b.columns.small-4
-        +e.BUTTON.button='='
-        +e.BUTTON.button='Поділитися'
-      +b.over.small-5.small-offset-6.end
-        +b.caption
-          +e.big Ця історія про добу, коли
-            br
-            | Україна досягла
-            br
-            | найвищого розквіту
-          +e.middle Коли Київська Русь говорить як рівна
-            br
-            | з рівними з наймогутнішими монархіями Заходу і
-            br
-            | Сходу: з візантійськими та німецькими імператорами,
-            br
-            | французькими, угорськими
-            br
-            | й норвезькими королями.
-
+    +b.NAV.nav-menu.row
+      +b.columns.small-4
+      +e.BUTTON.button='='
+      +e.BUTTON.button='Поділитися'
+    +b.over.small-5.small-offset-6.end
+      +b.caption
+        +e.big Ця історія про добу, коли
+          br
+          | Україна досягла
+          br
+          | найвищого розквіту
+        +e.middle Коли Київська Русь говорить як рівна
+          br
+          | з рівними з наймогутнішими монархіями Заходу і
+          br
+          | Сходу: з візантійськими та німецькими імператорами,
+          br
+          | французькими, угорськими
+          br
+          | й норвезькими королями.
+  +menu
