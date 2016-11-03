@@ -1,7 +1,7 @@
 .money {
 
 
-    & {
+    &__main {
         background-image: url("../img/money_background.png");
         background-attachment: fixed;
        // background-position: center;
@@ -15,12 +15,121 @@
 
     &__text {
         position: absolute;
-        padding-top: 15%;
+        padding-top: 17%;
         font-size: 30px;
         left: 50%;
         width: 50px;
         margin-left: -25px;
         text-align: center;
     }
+
+    &__text1 {
+        font-size: 50px;
+        font-family: Playfair Display,serif;
+    }
+
+    &__text2 {
+        padding-top: 30px;
+        font-size: 19px;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: Playfair Display,serif;
+        font-style: regular;
+    }
+
+    &__float_left {
+        float: left;
+        clear: left;
+        padding-left: 30%;
+        padding-top: 15%;
+    }
+
+    &__float_right {
+        float: right;
+        clear: right;
+        padding-right: 30%;
+        padding-top: 15%;
+
+    }
+
+        @media #{(min-width: 1024px) and (max-width: 1570px)} {
+
+        &__float_left {
+            padding-left: 25%;
+        }
+
+        &__float_right {
+            padding-right: 25%;
+        }
+
+        &__text {
+            left: 48%;
+        }
+    }
+
+    @media #{(min-width: 800px) and (max-width: 1160px)} {
+
+        &__main {
+            background-size: 0 0;
+        }
+
+        &__float_left {
+            padding-left: 10%;
+        }
+
+        &__float_right {
+            padding-right: 10%;
+        }
+
+        &__text {
+            left: 48%;
+        }
+    }
+
+    @media #{(min-width: 670px) and(max-width: 800px)}{
+
+        &__main {
+            background-size: 0 0;
+        }
+
+        &__float_left {
+            padding-left: 5%;
+        }
+
+        &__float_right {
+            padding-right: 5%;
+        }
+
+        &__text {
+            left: 48%;
+        }
+    }
+
+    @media #{(min-width: 0px) and(max-width: 669px)}{
+        &__main {
+            background-size: 0 0;
+        }
+
+        &__float_left {
+            padding-left: 0%;
+        }
+
+        &__float_right {
+            padding-right: 0%;
+        }
+
+        &__text {
+            left: 48%;
+        }
+
+        &__text1 {
+            font-size: 35px;
+        }
+
+        &__text2 {
+            font-size: 14px;
+        }
+    }
+
 
 }
