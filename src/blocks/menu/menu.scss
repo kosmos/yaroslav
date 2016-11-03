@@ -1,4 +1,28 @@
-.bg{background: url("../img/Layer-12.png")}
+.navigation{
+    height: 100vh;
+    opacity: .9;
+    position: absolute;
+    top: 0px;
+    margin: 0 !important;
+    padding:0 !important;
+
+    &__block{
+        height: 100%;
+
+        &:nth-child(1) {
+            background-color: #ffffff;
+        }
+
+        &:nth-child(2) {
+            background-color: rgba(27, 27, 27, 0.9);
+        }
+    }
+
+    .navigation-list {
+        position: relative;
+        top: 25%;
+    }
+}
 
 .navigation-list {
     background-color: #ffffff;

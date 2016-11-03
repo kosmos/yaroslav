@@ -1,6 +1,6 @@
 mixin menu()
-  +b.NAV.column.row
-    +b.small-6
+  +b.NAV.navigation.expanded.column.row
+    +e.block.small-6.columns
       +b.UL.navigation-list
         each val, index in menu
           - var num = index+1
@@ -8,6 +8,6 @@ mixin menu()
             +e.SPAN.value= val
             +e.SPAN.dots
             +e.SPAN.number= "0" + num
-    +b.small-6
+    +e.block.small-6.columns
       +b.thumbnail= "cercrrtr"
     +b.SPAN.close
