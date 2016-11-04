@@ -1,5 +1,25 @@
 .greatwin {
+    &__text{
+        text-align: center;
+    }
+
     &__main {
         background-color: #dfb83f;
+        padding-top: 200px;
+    }
+
+    &__bottomtext1 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: $font-sans-serif;
+    }
+
+    &__bottomtext2 {
+        text-transform: uppercase;
+        font-family: $font-serif;
+    }
+
+    &__pict {
+        padding-right: 10px;
     }
 }
