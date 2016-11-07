@@ -5,21 +5,108 @@
 
     &__main {
         background-color: #dfb83f;
-        padding-top: 200px;
+        padding-top: 12%;
+    }
+
+    &__toptext {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: $font-sans-serif;
+        font-size: 42px;
+        letter-spacing: 4px;
+    }
+
+    &__middletext {
+        padding-top: 11%;
+        font-family: $font-serif;
+        font-size: 18px;
+    }
+
+    &__bottomtext {
+        padding-top: 35%;
     }
 
     &__bottomtext1 {
         text-transform: uppercase;
         font-weight: bold;
         font-family: $font-sans-serif;
+        font-size: 18px;
+        padding-top: 10px;
+        letter-spacing: 2px;
+
     }
 
     &__bottomtext2 {
         text-transform: uppercase;
         font-family: $font-serif;
+        font-size: 10px;
+        letter-spacing: 1px;
+        padding-top: 23px;
     }
 
+
     &__pict {
-        padding: 0 !important;
+        padding-top: 2.4%;
+        padding-right: 0 !important;
     }
+
+    @media #{(min-width: 1400px) and (max-width: 1620px)}{
+        &__toptext {
+            font-size: 39px;
+            letter-spacing: 3px;
+        }
+
+        &__bottomtext {
+            padding-top: 21%;
+        }
+    }
+
+    @media #{(min-width: 1024px) and (max-width: 1399px)}{
+        &__main {
+            padding-top: 4%;
+        }
+
+        &__toptext {
+            font-size: 22px;
+        }
+
+        &__middletext {
+            font-size: 15px;
+            padding-top: 11%;
+        }
+
+        &__bottomtext {
+            padding-top: 15%;
+        }
+
+        &__bottomtext1 {
+            letter-spacing: 1px;
+            font-size: 15px;
+        }
+    }
+
+    @media #{(max-width: 1023px)} {
+        &__toptext {
+            font-size: 35px;
+            letter-spacing: 4px;
+        }
+
+        &__middletext {
+           padding-top: 9%;
+           font-size: 18px;
+        }
+
+        &__bottomtext {
+            padding-top: 6%;
+        }
+
+        &__bottomtext1 {
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+
+
+    }
+
+
 }
