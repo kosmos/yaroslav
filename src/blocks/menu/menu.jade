@@ -1,13 +1,18 @@
 mixin menu()
   +b.NAV.navigation.expanded.column.row
-    +e.block.small-6.columns
+    +e.block._diagonal.small-6.columns
       +b.UL.navigation-list
         each val, index in menu
           - var num = index+1
-          +e.LI.item
-            +e.SPAN.value= val
-            +e.SPAN.dots
-            +e.SPAN.number= "0" + num
+          +menuitem(num, val)
+
     +e.block.small-6.columns
       +b.thumbnail= "cercrrtr"
     +b.SPAN.close
+
+mixin menuitem(number, value)
+  - var percentage = 5
+  +e(style="margin-right: #{percentage + number*1.5}%").LI.item
+    +e.SPAN.value= value
+    +e.SPAN.dots
+    +e.SPAN.number= "0" + number

@@ -124,12 +124,12 @@
             display: none;
         }
     }
-    &__pos{
+    &__pos {
         position: relative;
-        &_inside{
+        &_inside {
             position: absolute;
             top: 50%;
-            height: 100px;
+            //height: 100px;
             margin-top: -50px;
             font-size: 13px;
             font-family: $font-serif;
