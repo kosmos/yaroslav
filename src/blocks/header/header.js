@@ -1,5 +1,9 @@
 var $ = require('jquery')
 
-$(document).ready(function(){
-    alert('yaroslav');
-});
+// function test(){
+//     $(document).ready(function () {
+//         console.log('yaroslav');
+//     });
+// }
+//
+// module.exports = test;

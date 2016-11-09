@@ -1,3 +1,18 @@
-//
-   Created by sergeytsybulnik on 10/24/16.
+mixin b_menu()
+  +b.NAV.navigation.expanded.column.row
+    +e.block._diagonal.small-6.columns
+      +b.UL.navigation-list
+        each val, index in menu
+          - var num = index+1
+          +menuitem(num, val)
 
+    +e.block.small-6.columns
+      +b.nav-preview
+    +b.SPAN.close
+
+mixin menuitem(number, value)
+  - var percentage = -12
+  +e(style="margin-right: #{percentage + number*2}%" data-order="#{number}").LI.item
+    +e.SPAN.value= value
+    +e.SPAN.dots
+    +e.SPAN.number= "0" + number
