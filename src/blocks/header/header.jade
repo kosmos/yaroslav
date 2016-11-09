@@ -1,8 +1,8 @@
 include ../preview/preview
 include ../menu/menu
 
-mixin header(data)
-  +preview
+mixin b_header(data)
+  +b_preview
   +b("header").header.small-12
     +b.NAV.nav-menu.row
       +b.columns.small-4
@@ -24,4 +24,4 @@ mixin header(data)
           | французькими, угорськими
           br
           | й норвезькими королями.
-    +menu
+    +b_menu
