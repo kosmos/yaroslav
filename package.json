@@ -89,6 +89,8 @@
     "webpack": "^1.12.12"
   },
   "dependencies": {
-    "jquery": "3.1.1"
+    "gsap": "^1.19.0",
+    "jquery": "3.1.1",
+    "scrollmagic": "^2.0.5"
   }
 }
