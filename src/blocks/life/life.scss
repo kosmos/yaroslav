@@ -49,7 +49,7 @@
         padding-right: auto;
         font-size: 120px;
         font-family: $font-sans-serif;
-        color: #{$color1};
+        color: #{$yellow};
         padding-top: 10%;
 
         &__dateup {
@@ -92,7 +92,7 @@
         font-family: $font-serif;
         padding-top: 10%;
         text-transform: uppercase;
-        color: #{$color2};
+        color: #{$grey};
     }
 
     &__centeredtext2 {
@@ -103,7 +103,7 @@
         font-family: $font-sans-serif;
         padding-top: 5%;
         text-transform: uppercase;
-        color: #{$color1};
+        color: #{$yellow};
         font-size: 38px;
         letter-spacing: 5px;
     }
@@ -116,7 +116,7 @@
         font-size: 22px;
         font-family: $font-serif;
         padding-top: 5%;
-        color: #{$color2};
+        color: #{$grey};
     }
 
 

@@ -1,5 +1,6 @@
 mixin b_timestamp(year, blocktext)
   + b.timestamp
     + e.date= year
-    + e.text!= blocktext
+    + e.text
+      +b_paragraph(blocktext)._type_grey._text_left
     + e.IMG.info(src="img/timestamp__info.png")

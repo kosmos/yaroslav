@@ -9,7 +9,7 @@
 
     &__text1{
         font-size: 4em;
-        color: #{$color1};
+        color: #{$yellow};
     }
 
     &__text2{
@@ -22,7 +22,7 @@
         padding-top: 0.4%;
         text-transform: uppercase;
         font-family: $font-serif;
-        color: #{$color2};
+        color: #{$grey};
     }
 
     &__text3{
@@ -33,7 +33,7 @@
     }
 
     &__text4{
-        color: #{$color1};
+        color: #{$yellow};
         padding-bottom: 2.2%;
     }
 
@@ -52,7 +52,7 @@
     &__bigletter{
         line-height: 0.7;
         font-size: 9em;
-        color: #{$color1};
+        color: #{$yellow};
         float: left;
         margin-right: 2%;
     }
