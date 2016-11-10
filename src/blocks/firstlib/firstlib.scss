@@ -3,6 +3,7 @@
         font-family: $font-sans-serif;
     }
     &__line1{
+        padding-top: 12%;
         text-align: center;
     }
 
@@ -64,5 +65,9 @@
         width: 92%;
         font-size: 1.8em;
         font-family: $font-serif;
+    }
+
+    &__img1 {
+        padding-left: 0 !important;
     }
 }
