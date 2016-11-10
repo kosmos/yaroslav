@@ -25,6 +25,9 @@ nbproject
 .idea
 *.iml
 
+#Yarn
+yarn.lock
+
 # Folders to ignore
 .sass-cache
 .tmp
