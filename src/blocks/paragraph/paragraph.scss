@@ -1,0 +1,33 @@
+.paragraph {
+
+    font-family: $font-serif;
+    font-size: 1em;
+
+    &_type_grey {
+        color: $grey;
+    }
+
+    &_type_white {
+        color: #ffffff;
+    }
+
+    &_type_yellow {
+        color: $yellow;
+    }
+
+    &_text_left {
+        text-align: left;
+    }
+
+    &_text_center {
+        text-align: center;
+    }
+
+    &_text_right {
+        text-align: right;
+    }
+
+    &__text {
+        line-height: 1.667;
+    }
+}
