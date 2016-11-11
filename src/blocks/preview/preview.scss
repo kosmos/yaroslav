@@ -117,15 +117,16 @@
         width: 50%;
         height: 50%;
         margin: -25% auto 0% -25%;
-
-        &_display_show {
-            display:block;
-        }
-
-        &_display_hide {
-            display: none;
-        }
     }
+
+    &_display_show {
+        display:block;
+    }
+
+    &_display_hide {
+        display: none;
+    }
+
     &__pos {
         position: relative;
         &_inside {
