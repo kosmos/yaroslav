@@ -1,6 +1,6 @@
-mixin b_timestamp(year, blocktext)
-  + b.timestamp
-    + e.date= year
-    + e.text
-      +b_paragraph(blocktext)._type_grey._text_left
-    + e.IMG.info(src="img/timestamp__info.png")
+mixin b_timestamp(data)
+  + b.timestamp&attributes(attributes)
+    + e.date #{data[0]}
+    + e.text 
+      +b_paragraph(data[1])._type_grey._text_left
+    + e("img").info(src="img/timestamp__info.png")
