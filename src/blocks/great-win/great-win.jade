@@ -1,0 +1,16 @@
+include ../paragraph/paragraph
+
+mixin b_great_win(data)
+  +b.great-win
+    +e.main.row.expanded
+        +e.text(class="columns small-12 medium-12 large-5")
+          +e.toptext #{data[0]}
+          +e.middletext
+            +b_paragraph(data[1])._fontsize_1dot7em
+          +e.bottomtext
+              + e.IMG.line1(src="img/great-win__longline.png")
+              + e.bottomtext1 #{data[2]}
+              + e.bottomtext2 #{data[3]}
+              + e.IMG.line2(src="img/great-win__longline.png")
+        +e.IMG.pict.columns.small-12.medium-12.large-7(src="img/great-win__img.png")
+

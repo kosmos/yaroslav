@@ -1,8 +1,13 @@
-.years {
+.life-10-and-30-years {
+    & {
+        width: 100%;
+        padding-top: 90px;
+    }
+
     &__name {
-         font-size: 44px;
-         padding-top: 3%;
-         font-family: $font-sans-serif;
+        font-size: 44px;
+        padding-top: 3%;
+        font-family: $font-sans-serif;
     }
 
     &__value {
@@ -41,4 +46,7 @@
     &__info{
         padding-top: 20px;
     }
+
 }
+
+
