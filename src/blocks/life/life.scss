@@ -1,86 +1,16 @@
 .life {
-    padding-top: 150px;
-
-/*
-    &__img1{
-        width: 100%;
-        height: 0px;
-        padding-bottom:53%;
-    }*/
-
-
-/*    &__img1 {
-        width: 35%;
-        float: left;
-    }*/
-
-/*    &__textarea {
-        width: 65%;
-        float: left;
-        height: 100%;
-    }*/
-
-/*    @media #{$mobile} {
-
-        &__img1 {
-            width: 100%;
-        }
-
-        &__textarea {
-            width: 100%;
-        }
-    }*/
-
-/*    @media #{(min-width: 1024px) and (max-width: 1470px)} {
-
-        &__img1 {
-            width: 35%;
-        }
-
-        &__textarea {
-            width: 65%;
-        }
-    }*/
+    padding-top: 6%;
 
     &__livedates {
         text-align: center;
         width: 100%;
         padding-left: auto;
         padding-right: auto;
-        font-size: 120px;
+        font-size: 10em;
         font-family: $font-sans-serif;
         color: #{$yellow};
         padding-top: 10%;
 
-        &__dateup {
-            position:relative;
-            top:-0px;
-        }
-
-        &__dateup_size_115px {
-            font-size: 115px;
-        }
-
-       /* @media #{$tablet} {
-            & {
-                font-size: 60px;
-            }
-
-            &__dateup_size_115px {
-                font-size: 55px;
-            }
-        }
-
-        @media #{$mobile} {
-            & {
-                font-size: 16px;
-                padding-top: 3%;
-            }
-
-            &__dateup_size_115px {
-                font-size: 14px;
-            }
-        }*/
     }
 
     &__centeredtext1 {
@@ -88,7 +18,7 @@
         width: 100%;
         padding-left: auto;
         padding-right: auto;
-        font-size: 22px;
+        font-size: 1.8em;
         font-family: $font-serif;
         padding-top: 10%;
         text-transform: uppercase;
@@ -104,8 +34,8 @@
         padding-top: 5%;
         text-transform: uppercase;
         color: #{$yellow};
-        font-size: 38px;
-        letter-spacing: 5px;
+        font-size: 3.1em;
+        letter-spacing: 0.17em;
     }
 
     &__centeredtext3{
@@ -114,36 +44,6 @@
         font-family: $font-serif;
         padding-top: 5%;
     }
-
-
-/*        @media #{$tablet} {
-            & {
-                font-size: 18px;
-            }
-
-            &_size_38px {
-                font-size: 28px;
-            }
-        }*/
-
-
-/*        @media #{$mobile} {
-            & {
-                font-size: 12px;
-            }
-
-            &_size_38px {
-                font-size: 10px;
-            }
-
-            &_paddingtop_10perc {
-                padding-top: 5%;
-            }
-
-            &_paddingtop_5perc {
-                padding-top: 2%;
-            }
-        }*/
 
 }
 

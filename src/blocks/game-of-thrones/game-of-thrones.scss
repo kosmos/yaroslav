@@ -3,16 +3,16 @@
     font-family: $font-serif;
 
     &__mainname {
-        font-size: 48px;
+        font-size: 4em;
         font-family: $font-sans-serif;
-        margin-top: 190px;
+        margin-top: 7%;
     }
 
     &__shortnote {
         text-transform: uppercase;
         color: $grey;
         font-size: 1.7em;
-        letter-spacing: 2px;
+        letter-spacing: 0.12em;
         margin: 1.9% auto 0 auto;
         width: 26%;
     }
