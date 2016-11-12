@@ -1,28 +1,14 @@
-mixin b_life
+mixin b_life(data)
   +b.life.row.expanded
     +b.IMG.life__img1.columns.small-11.medium-10.madium-offset-2.large-5(src="img/life__photo.png")
     +b.life__textarea.columns.small-12.medium-12.large-7
       +e.livedates
-        +e.SPAN.date 97
-        +e.SPAN.dateup 8-
-        +e.SPAN.dateup._size_115px 10
-        +e.SPAN.date 54
-      //+e.centeredtext_paddingtop_10perc._uppercase._color_999999 історія про час, про місце, про людей
-      +e.centeredtext1 історія про час, про місце, про людей
-      //+e.centeredtext_paddingtop_5perc._color_cc9933._uppercase._size_38px._letterspacing_2._font_opensans історія про ярослава мудрого
-      +e.centeredtext2 історія про ярослава мудрого
-      //+e.centeredtext_paddingtop_5perc._color_999999
-      +e.centeredtext3
-        | Історія мудрого князя, який умів
-        br
-        | "зазирати за горизонт", ставити
-        br
-        | і розв'язувати доленосні задання,
-        br
-        | масштаби й часові межі, яких
-        br
-        | виходять далеко за межі
-        br
-        | його життя.
+        +e.SPAN.date #{data[0]}
+        +e.SPAN.dateup #{data[1]}
+        +e.SPAN.dateup._size_115px #{data[2]}
+        +e.SPAN.date #{data[3]}
+      +e.centeredtext1 #{data[4]}
+      +e.centeredtext2 #{data[5]}
+      +e.centeredtext3 #{data[6]}
 
 

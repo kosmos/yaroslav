@@ -19,7 +19,7 @@
     &__main {
         background-color: #dfb83f;
         padding-top: 12%;
-        padding-bottom: 5%;
+        padding-bottom: 17%;
 
     }
 
@@ -29,23 +29,28 @@
         font-family: $font-sans-serif;
         font-size: 42px;
         letter-spacing: 4px;
+        width: 80%;
+        margin: 0 auto;
     }
 
     &__middletext {
         padding-top: 11%;
         font-family: $font-serif;
-        font-size: 18px;
+        margin: 0 auto;
+        width: 58%;
     }
 
     &__bottomtext {
         padding-top: 35%;
+        margin: 0 auto;
+        width: 58%;
     }
 
     &__bottomtext1 {
         text-transform: uppercase;
         font-weight: bold;
         font-family: $font-sans-serif;
-        font-size: 18px;
+        font-size: 1.7em;
         padding-top: 10px;
         letter-spacing: 2px;
 
@@ -54,7 +59,7 @@
     &__bottomtext2 {
         text-transform: uppercase;
         font-family: $font-serif;
-        font-size: 10px;
+        font-size: 0.9em;
         letter-spacing: 1px;
         padding-top: 23px;
     }
