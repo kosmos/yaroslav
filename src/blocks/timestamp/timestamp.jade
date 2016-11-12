@@ -1,6 +1,8 @@
+include ../paragraph/paragraph
+
 mixin b_timestamp(data)
   + b.timestamp&attributes(attributes)
     + e.date #{data[0]}
-    + e.text 
-      +b_paragraph(data[1])._type_grey._text_left
+    + e.text
+      +b_paragraph(data[1])._text_left._fontsize_1dot7em
     + e("img").info(src="img/timestamp__info.png")

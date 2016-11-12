@@ -1,36 +1,15 @@
-mixin b_life_10_30_years
+mixin b_life_10_30_years(data)
   +b.life10and30years.row.expanded
     +b.years.columns.small-12.medium-5.madium-offset-1.large-3.large-offset-2
-      +e.name Ярославу
+      +e.name #{data[0]}
       +e.value
-        +e.SPAN.date 10
-        +e.SPAN.datetext років
-      +e.details
-        | Він починає князювати в Ростові.
-        br
-        | Княжив у Ростові Ярослав 23 роки,
-        br
-        | до смерті свого старшого брата
-        br
-        | Вишеслава, який правив у Новгороді
-
+        +e.SPAN.date #{data[1]}
+        +e.SPAN.datetext #{data[2]}
+      +e.details #{data[3]}
     +b.years.years__margintop_129.columns.small-9.small-offset-3.medium-5.medium-offset-1.large-3.large-offset-2.end
       +e.value
-        +e.SPAN.date 33
-        +e.SPAN.datetext._top_35px роки
-       +e.details._paddingtop_74px
-        | Розпочинає Новгородське князювання,
-        br
-        | яке в цей час мало статус другий
-        br
-        | по значенню після Київського.
-        br
-        | Однак новгородський князь все одно
-        br
-        | мав підлегле становище до великого
-        br
-        | князя, виплачуючи щорічно данину
-        br
-        | в 2000 гривень.
+        +e.SPAN.date #{data[4]}
+        +e.SPAN.datetext._top_35px #{data[5]}
+       +e.details._paddingtop_74px #{data[6]}
       +e.IMG.info(src="img/years__info.png")
     +e(style='clear: both;')

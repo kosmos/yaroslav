@@ -13,12 +13,14 @@
     }
 
     &__text2{
-        font-size: 1.7em;
+        font-size: 2.2em;
         padding-top: 2.8%;
+        margin: 0 auto;
+        width: 27%;
     }
 
     &__smalltext{
-        font-size: 0.75em;
+        font-size: 0.85em;
         padding-top: 0.4%;
         text-transform: uppercase;
         font-family: $font-serif;
@@ -27,7 +29,7 @@
 
     &__text3{
         padding-top: 2.5%;
-        font-size: 2em;
+        font-size: 2.5em;
         text-transform: uppercase;
         letter-spacing: 2px;
     }
@@ -38,11 +40,11 @@
     }
 
     &__number{
-        font-size: 4em ;
+        font-size: 5.5em ;
     }
 
     &__books{
-        font-size: 2em;
+        font-size: 3em;
     }
 
     &__line2{

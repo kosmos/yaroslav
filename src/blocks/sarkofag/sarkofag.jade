@@ -1,26 +1,25 @@
-mixin b_sarkofag
-  + b.sarkofag
-    + e.name Відкриття саркофагу
-    +b.sarkofag__box.row.expanded
-      + b.columns.small-12.medium-5.large-3.large-offset-1
-        + b_timestamp("1936","Вперше був відкритий саркофаг <br/>Яролава Мудрого.Як показала <br/>експертиза, чоловічий кістяк<br/> належав Ярославу Мудрому, <br/>жіночий визначити не вдалося.")
-      + b.columns.small-12.medium-6.medium-offset-1.large-4.end
-        + b.IMG(src="img/sarkofag__bones.png")
-    +b.sarkofag__box.row.expanded
-      + b.IMG.columns.small-12.medium-5.large-3.large-offset-3(src="img/sarkofag__letter.png")
-      + b.sarkofag__1939.columns.small-12.medium-6.medium-offset-1.large-3.large-offset-1.end
-        + b_timestamp("1939","Останки із саркофага було відправлено<br/>до Ленінградського інституту етнографії <br/>та антропології, де з них склали два <br/>скелети - чоловічий та жіночий. <br/>За відповідними актам в 1940 році обидва <br/>кістяки було повернено до заповідника, <br/>де вони зберігалися у фондах.")
-    +b.sarkofag__box.row.expanded
-      + b.columns.medium-5.medium-offset-1.large-3.large-offset-1
-        + b_timestamp("1964","Було прийнято рішення покласти <br/>останки назад у саркофаг. Зі слів <br/>Ірми Фантимівни Тоцької (заступник <br/>директора Софійського заповідника), <br/>тодішній завідувач фондів доктор <br/>історичних наук Сергій Висоцький <br/>знав, що у фондах зберігаються <br/>кістки не двох а лише одного <br/>скелета. Проте він був певен, що це <br/>останки Ярослава.      ")
-      + b.columns.medium-5.medium-offset-1.large-3.large-offset-1
-        + b_timestamp("2009","Саркофаг було відкрито з метою <br/>вивчення його вмісту, а також для <br/>проведення дослідження відповідно <br/>до методів і технологій сучасної <br/>науки. Протягом 2009-2010 років <br/>здійснено значний за обсягом <br/>комплекс досліджень останків із <br/>саркофага. Також проведено велику <br/>пошукову роботу зі з'ясування місця <br/>знаходження останків Ярослава.")
-      + b.column.medium-6.large-3.end
-        +b.IMG.sarkofag__photo(src="img/sarkofag__photo.png")
-    + b.sarkofag__text.box.columns.small-12.large-12
-        | Ймовірний рік зникнення останків &#8212; 1943.
-        br
-        | Місце знаходження наразі невідоме.
+include ../timestamp/timestamp
+
+mixin b_sarkofag(data)
+  +b.sarkofag
+    +e.name #{data[0]}
+    +e.box.row.expanded
+      +e.col.columns.small-12.medium-5.large-3.large-offset-1
+        +b_timestamp(data[1])._width_69perc
+      +e.col.columns.small-12.medium-6.medium-offset-1.large-4.end
+        +e.IMG.img(src="img/sarkofag__bones.png")
+    +e.box.row.expanded
+      +e.IMG.img.columns.small-12.medium-5.large-3.large-offset-3(src="img/sarkofag__letter.png")
+      +e.date1939.columns.small-12.medium-6.medium-offset-1.large-3.large-offset-1.end
+        + b_timestamp(data[2])._width_69perc
+    +e.box.row.expanded
+      +e.col.columns.medium-5.medium-offset-1.large-3.large-offset-1
+        +b_timestamp(data[3])._width_69perc
+      +e.col.columns.medium-5.medium-offset-1.large-3.large-offset-1
+        +b_timestamp(data[4])._width_69perc
+      +e.col.column.medium-6.large-3.end
+        +e.IMG.photo(src="img/sarkofag__photo.png")
+    +e.text.columns.small-12.large-12!= data[5]
 
 
 
