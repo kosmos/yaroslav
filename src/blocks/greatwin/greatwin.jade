@@ -1,31 +1,16 @@
-mixin b_greatwin
-  +b.greatwin__diagonal
+include ../paragraph/paragraph
+
+mixin b_greatwin(data)
+  +b.greatwin
     +e.main.row.expanded
-        + e.text(class="columns small-12 medium-12 large-5")
-          + e.toptext
-            | Найбільша перемога
-            br
-            | Ярослава
+        +e.text(class="columns small-12 medium-12 large-5")
+          +e.toptext #{data[0]}
           +e.middletext
-            | У 1036 році він здобув перемогу над печенігами
-            br
-            | і цим звільнив Давньоруську державу від їх набігів.
-            br
-            | На згадку про перемогу над печенігами князь
-            br
-            | заклав знаменитий собор Святої Софії в Києві.
+            +b_paragraph(data[1])._fontsize_1dot7em
           + b.greatwin__bottomtext
               + b.IMG.greatwin__line1(src="img/greatwin__longline.png")
-              + b.greatwin__bottomtext1
-                | «Печеніги втікали на всі боки, не
-                br
-                | знаючи, куди втікати; одні потонули
-                br
-                | в Сітомлі, інші в інших ріках, а решта
-                br
-                | їх повтікала і так до сьогодні»
-              + b.greatwin__bottomtext2
-                | літописні відомості
+              + b.greatwin__bottomtext1 #{data[2]}
+              + b.greatwin__bottomtext2 #{data[3]}
               + b.IMG.greatwin__line2(src="img/greatwin__longline.png")
         + b.IMG.greatwin__pict.columns.small-12.medium-12.large-7(src="img/greatwin__img.png")
 
