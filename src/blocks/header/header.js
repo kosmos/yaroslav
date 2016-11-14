@@ -6,7 +6,7 @@ const help = () => {
         $('.help-info').css('top', '0%');
     });
 
-    $('.help-info__close').bind( 'click', function (e) {
+    $('.help-info .close').bind( 'click', function (e) {
         e.preventDefault();
         $('.help-info').css('top', '-100%');
     });

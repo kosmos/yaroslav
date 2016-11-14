@@ -7,11 +7,14 @@ const navigation = () => {
     $('.hamburger').bind( 'click', function (e) {
         e.preventDefault();
         $(this).find('.hamburger__line').toggleClass('hamburger__line_type_active');
+
+        $('.navigation').toggleClass('is-active');
+        $('.social-list .social-list__share').toggleClass('is-color');
     });
 
     $('.nav-menu__button_type_share').bind('click', function(e){
         e.preventDefault();
-        $('.nav-menu__social-list').toggleClass('is-active');
+        $('.social-list').toggleClass('is-active');
     });
 }
 
