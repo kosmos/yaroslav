@@ -2,14 +2,18 @@ import $ from 'jquery';
 require('animation.gsap');
 import ScrollMagic from 'scrollmagic';
 
-let controller = new ScrollMagic.Controller();
+const manyParalax = () => {
 
-var slideParallaxScene = new ScrollMagic.Scene({
-    triggerElement: ".money",
-    triggerHook: 1,
-    duration: '200%'
-})
-    .setTween(TweenMax.from('.money__main', 1, {y: '-30%', ease:Power0.easeNone}))
-    .addTo(controller);
+    let controller = new ScrollMagic.Controller();
 
-module.exports =  slideParallaxScene;
+    let slideParallaxScene = new ScrollMagic.Scene({
+        triggerElement: ".money",
+        triggerHook: 1,
+        duration: '200%'
+    })
+        .setTween(TweenMax.from('.money__main', 1, {y: '-30%', ease:Power0.easeNone}))
+        .addTo(controller);
+    
+}
+
+module.exports =  manyParalax;
