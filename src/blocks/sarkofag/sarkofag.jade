@@ -1,22 +1,22 @@
-include ../timestamp/timestamp
+include ../time-stamp/time-stamp
 
 mixin b_sarkofag(data)
   +b.sarkofag
     +e.name #{data[0]}
     +e.box.row.expanded
       +e.col.columns.small-12.medium-5.large-3.large-offset-1
-        +b_timestamp(data[1])._width_69perc
+        +b_time_stamp(data[1])._width_69perc
       +e.col.columns.small-12.medium-6.medium-offset-1.large-4.end
         +e.IMG.img(src="img/sarkofag__bones.png")
     +e.box.row.expanded
       +e.IMG.img.columns.small-12.medium-5.large-3.large-offset-3(src="img/sarkofag__letter.png")
       +e.date1939.columns.small-12.medium-6.medium-offset-1.large-3.large-offset-1.end
-        + b_timestamp(data[2])._width_69perc
+        + b_time_stamp(data[2])._width_69perc
     +e.box.row.expanded
       +e.col.columns.medium-5.medium-offset-1.large-3.large-offset-1
-        +b_timestamp(data[3])._width_69perc
+        +b_time_stamp(data[3])._width_69perc
       +e.col.columns.medium-5.medium-offset-1.large-3.large-offset-1
-        +b_timestamp(data[4])._width_69perc
+        +b_time_stamp(data[4])._width_69perc
       +e.col.column.medium-6.large-3.end
         +e.IMG.photo(src="img/sarkofag__photo.png")
     +e.text.columns.small-12.large-12!= data[5]
