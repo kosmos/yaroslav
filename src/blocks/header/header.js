@@ -1,9 +1,15 @@
-var $ = require('jquery')
+import $ from 'jquery';
 
-// function test(){
-//     $(document).ready(function () {
-//         console.log('yaroslav');
-//     });
-// }
-//
-// module.exports = test;
+const help = () => {
+    $('.preview__text_type_link').bind( 'click', function (e) {
+        e.preventDefault();
+        $('.help-info').css('top', '0%');
+    });
+
+    $('.help-info .close').bind( 'click', function (e) {
+        e.preventDefault();
+        $('.help-info').css('top', '-100%');
+    });
+}
+
+module.exports = help;

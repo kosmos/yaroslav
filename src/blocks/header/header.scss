@@ -16,30 +16,6 @@
     }
 }
 
-.nav-menu {
-    padding: 20px;
-    color: #ffffff;
-    position: relative;
-
-    &__button {
-        border-style: solid;
-        border-width: 1px;
-        border-color: rgb(255, 255, 255);
-        background-color: rgb(0, 0, 0);
-        opacity: 0.7;
-        width: 108px;
-        height: 32px;
-        margin-right: 20px;
-        color: #ffffff;
-
-        &:hover {
-            font-weight: 600;
-            opacity: .9;
-        }
-    }
-
-}
-
 .over {
     background: #ffffff;
     opacity: .7;

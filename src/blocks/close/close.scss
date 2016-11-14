@@ -1,0 +1,37 @@
+.close {
+    position: absolute;
+    cursor: pointer;
+
+    &:after, &:before {
+        background: $yellow none repeat scroll 0% 0%;
+        content: "";
+        display: block;
+        height: 1px;
+        margin-top: -1px;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+    }
+
+    &:after {
+        @include rotate(45);
+        @include transition(all .3s linear .1s);
+    }
+
+    &:before {
+        @include rotate(-45);
+        @include transition(all .3s linear .3s);
+    }
+
+    &:hover:after, &:hover:before {
+        background-color: #000000;
+    }
+
+    &:hover:after {
+        @include rotate(225);
+    }
+
+    &:hover:before {
+        @include rotate(-225);
+    }
+}

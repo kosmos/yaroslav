@@ -1,0 +1,177 @@
+.nav-menu {
+    padding: 20px;
+    color: #ffffff;
+    position: relative;
+    z-index: 10;
+
+    &__button {
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        opacity: 0.7;
+        width: 108px;
+        height: 32px;
+        margin-right: 20px;
+        color: #ffffff;
+
+        &_type_share:hover {
+            color: $yellow;
+        }
+
+        &:hover {
+            font-weight: 600;
+            opacity: 1;
+            border-color: $yellow;
+        }
+    }
+}
+
+.hamburger {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    vertical-align: middle;
+    width: 22px;
+
+    &__line {
+        background: #fff none repeat scroll 0% 0%;
+        height: 2px;
+        left: 0px;
+        position: absolute;
+        transition: all 0.2s ease 0s;
+        width: 100%;
+
+        &:first-child {
+            top: 0%;
+            transform-origin: left top 0;
+        }
+
+        &:nth-child(2) {
+            margin-top: -1px;
+            top: 50%;
+        }
+
+        &:last-child {
+            bottom: 0%;
+            transform-origin: left bottom 0;
+        }
+
+        &_type_active {
+
+            &:first-child {
+                transform: translate(3px, -0.5px) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+                transform: scale(0.5);
+                visibility: hidden;
+            }
+
+            &:last-child {
+                transform: translate(3px, 0.5px) rotate(-45deg);
+            }
+        }
+    }
+
+    &:hover &__line {
+        background: $yellow;
+    }
+}
+
+.social-list {
+    margin: 0px 0px 0px -120px;
+    padding: 0px;
+    list-style: none;
+    vertical-align: middle;
+    display: inline-block;
+    transition: all .3s ease-in-out .1s;
+    position: relative;
+    z-index: -1;
+
+    &__item-list {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+
+        &:hover {
+            z-index: 2;
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+    }
+
+    &__share {
+        font-family: socicon;
+        font-style: normal;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        box-sizing: border-box;
+
+        transition: .1s;
+        transition-property: transform;
+        transform: translateZ(0);
+
+        overflow: hidden;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        position: relative;
+        z-index: 1;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 11px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        margin-right: 6px;
+        color: #fcfcfc;
+        background-color: none;
+
+        &_type_facebook {
+            &:before {
+                content: '\e041';
+            }
+        }
+
+        &_type_vkontakte {
+            &:before {
+                content: '\e01a';
+            }
+        }
+
+        &_type_twitter {
+            &:before {
+                content: '\e040';
+            }
+        }
+    }
+
+    &__share.is-color {
+
+        &_type_facebook{
+            background-color: #3e5b98;
+        }
+
+        &_type_vkontakte{
+            background-color: #5a7fa6;
+        }
+
+        &_type_twitter {
+            background-color: #4da7de;
+        }
+    }
+}
+
+.social-list.is-active {
+    //display: inline-block;
+    margin-left: 0px;
+}
+
+.soc-icon-last {
+    margin: 0 !important;
+}

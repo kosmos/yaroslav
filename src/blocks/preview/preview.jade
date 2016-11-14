@@ -1,17 +1,16 @@
 include ../stamp/stamp
+include ../help-info/help-info
 
 mixin b_preview(data)
-  +b("section").preview
-    +e.text_type_year= preview.text1
-    +e.text_type_gold= preview.text2
-    +e.text_type_tsn= preview.text3
-    +e.A.text_type_link(href='#info')= preview.text4
-    +e.stamp
+  +b("section").preview.row
+    +e.text_type_year #{data[0]}
+    +e.text_type_gold #{data[1]}
+    +e.text_type_tsn #{data[2]}
+    +e.A.text_type_link.small-12.medium-6.large-4.small-centered #{data[3]}
+    +e.text_type_stamp
       +stamp
-    +e.text_type_start.bounceb= preview.text5
+    +e.text_type_start.bounceb #{data[4]}
     +e.A.text_type_arrow.bounceb(href='#start')
 
-  +b.help-info
-    +e.circle_dislpay_show
-      +e.pos_inside= preview.help
+  +b_help-info(data[5])
 
