@@ -119,24 +119,24 @@ const preview = () => {
 
     })($);
 
-    var _el = $('.preview');
-    var _window = $(window);
-
-    _el.disablescroll({
-        handleScrollbar: false
-    });
-
-    _window.scroll(function() {
-        console.log($(window).scrollTop());
-        console.log($('header').offset().top);
-        if($(window).scrollTop()+1 > $('header').offset().top){
-            _el.disablescroll("undo");
-        }else{
-            _el.disablescroll({
-                handleScrollbar: false
-            });
-        };
-    });
+    // var _el = $('.preview');
+    // var _window = $(window);
+    //
+    // _el.disablescroll({
+    //     handleScrollbar: false
+    // });
+    //
+    // _window.scroll(function() {
+    //     console.log($(window).scrollTop());
+    //     console.log($('header').offset().top);
+    //     if($(window).scrollTop()+1 > $('header').offset().top){
+    //         _el.disablescroll("undo");
+    //     }else{
+    //         _el.disablescroll({
+    //             handleScrollbar: false
+    //         });
+    //     };
+    // });
     // $("html, body").animate({ scrollTop: 500 }, "slow", function() {
 
         // Enable user scrolling again when animated scrolling completes
