@@ -1,8 +1,8 @@
-mixin b_menu()
+mixin b_menu(data)
   +b.NAV.navigation.expanded.column.row
     +e.block._diagonal.small-6.columns
       +b.UL.navigation-list
-        each val, index in menu
+        each val, index in data
           - var num = index+1
           +menuitem(num, val)
 

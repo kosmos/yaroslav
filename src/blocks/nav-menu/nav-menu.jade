@@ -1,0 +1,15 @@
+mixin b_nav-menu(data)
+  +b.NAV.nav-menu.row&attributes(attributes)
+    +e.BUTTON.button
+      +b.hamburger
+        +e.line
+        +e.line
+        +e.line
+    +e.BUTTON.button._type_share #{data}
+    +b.UL.social-list
+      +e.LI.item-list
+        +e.A.share._type_facebook
+      +e.LI.item-list
+        +e.A.share._type_vkontakte
+      +e.LI.item-list
+        +e.A.share._type_twitter.soc-icon-last
