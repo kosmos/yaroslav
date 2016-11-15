@@ -2,13 +2,15 @@ include ../game-of-thrones/game-of-thrones
 
 mixin b_money(data)
   +b.money.money__main
-    +e.float_left
-      +e.text1 #{data[0]}
-      +e.text2!= data[1]
-    +e.text =
-    +e.float_right
-      +e.text1 #{data[2]}
-      +e.text2!= data[3]
-    +e.wrapper
-      +b_game_of_thrones(sectionGameOfThrones)
-  +e(style='clear: both;')
+    +e.bcg
+    +e.content
+      +e.float_left
+        +e.text1 #{data[0]}
+        +e.text2!= data[1]
+      +e.text =
+      +e.float_right
+        +e.text1 #{data[2]}
+        +e.text2!= data[3]
+      +e.wrapper
+        +b_game_of_thrones(sectionGameOfThrones)
+      +e(style='clear: both;')

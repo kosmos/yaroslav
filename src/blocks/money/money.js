@@ -8,10 +8,10 @@ let controller = new ScrollMagic.Controller();
 
 let slideParallaxScene = new ScrollMagic.Scene({
     triggerElement: ".money",
-    triggerHook: 0.7,
-    duration: '200%'
+    triggerHook: 1,
+    duration: '150%'
 })
-    .setTween(TweenMax.from('.money__main', 1, {y: '-15%', opacity: 0, ease:Power0.easeNone}))
+    .setTween(TweenMax.from('.money__bcg', 1, {y: '-60%', opacity: 0, ease:Power0.easeNone}))
     .addTo(controller);
 }
 
