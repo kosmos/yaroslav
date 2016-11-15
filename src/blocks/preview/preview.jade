@@ -3,13 +3,13 @@ include ../help-info/help-info
 
 mixin b_preview(data)
   +b("section").preview.row
-    +e.text_type_year #{data[0]}
+    +e.text_type_year(id="t1") #{data[0]}
     +e.text_type_gold #{data[1]}
     +e.text_type_tsn #{data[2]}
     +e.A.text_type_link.small-12.medium-6.large-4.small-centered #{data[3]}
     +e.text_type_stamp
       +stamp
-    +e.text_type_start.bounceb #{data[4]}
+    +e.text_type_start #{data[4]}
     +e.A.text_type_arrow.bounceb(href='#start')
 
   +b_help-info(data[5])

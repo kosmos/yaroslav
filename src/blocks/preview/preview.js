@@ -1,4 +1,11 @@
 import $ from 'jquery';
+// import TweenLite from 'TweenLite';
+// require('animation.gsap');
+import TweenMax from 'TweenMax';
+import CSSPlugin from 'CSSPlugin';
+import CSSRulePlugin from 'CSSRulePlugin';
+
+
 
 const preview = () => {
     /**
@@ -9,7 +16,8 @@ const preview = () => {
      * Use while jQuery is animating the scroll position for a guaranteed super-smooth ride!
      */
 
-    ;(function($) {
+    ;
+    (function ($) {
 
         "use strict";
 
@@ -19,10 +27,10 @@ const preview = () => {
             // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
             // left: 37, up: 38, right: 39, down: 40
             this.opts = $.extend({
-                handleWheel : true,
+                handleWheel: true,
                 handleScrollbar: true,
-                handleKeys : true,
-                scrollEventKeys : [32, 33, 34, 35, 36, 37, 38, 39, 40]
+                handleKeys: true,
+                scrollEventKeys: [32, 33, 34, 35, 36, 37, 38, 39, 40]
             }, options);
 
             this.$container = $container;
@@ -34,54 +42,54 @@ const preview = () => {
 
         proto = UserScrollDisabler.prototype;
 
-        proto.disable = function() {
+        proto.disable = function () {
             var t = this;
 
-            if(t.opts.handleWheel) {
+            if (t.opts.handleWheel) {
                 t.$container.on(
                     "mousewheel.disablescroll DOMMouseScroll.disablescroll touchmove.disablescroll",
                     t._handleWheel
                 );
             }
 
-            if(t.opts.handleScrollbar) {
+            if (t.opts.handleScrollbar) {
                 t.lockToScrollPos = [
                     t.$container.scrollLeft(),
                     t.$container.scrollTop()
                 ];
-                t.$container.on("scroll.disablescroll", function() {
+                t.$container.on("scroll.disablescroll", function () {
                     t._handleScrollbar.call(t);
                 });
             }
 
-            if(t.opts.handleKeys) {
-                t.$document.on("keydown.disablescroll", function(event) {
+            if (t.opts.handleKeys) {
+                t.$document.on("keydown.disablescroll", function (event) {
                     t._handleKeydown.call(t, event);
                 });
             }
         };
 
-        proto.undo = function() {
+        proto.undo = function () {
             var t = this;
             t.$container.off(".disablescroll");
-            if(t.opts.handleKeys) {
+            if (t.opts.handleKeys) {
                 t.$document.off(".disablescroll");
             }
         };
 
-        proto._handleWheel = function(event) {
+        proto._handleWheel = function (event) {
             event.preventDefault();
             $('html, body').animate({
                 scrollTop: $('header').offset().top
             }, 1000);
         };
 
-        proto._handleScrollbar = function() {
+        proto._handleScrollbar = function () {
             this.$container.scrollLeft(this.lockToScrollPos[0]);
             this.$container.scrollTop(this.lockToScrollPos[1]);
         };
 
-        proto._handleKeydown = function(event) {
+        proto._handleKeydown = function (event) {
             for (var i = 0; i < this.opts.scrollEventKeys.length; i++) {
                 if (event.keyCode === this.opts.scrollEventKeys[i]) {
                     event.preventDefault();
@@ -92,23 +100,23 @@ const preview = () => {
 
 
         // Plugin wrapper for object
-        $.fn.disablescroll = function(method) {
+        $.fn.disablescroll = function (method) {
 
             // If calling for the first time, instantiate the object and save
             // reference. The plugin can therefore only be instantiated once per
             // page. You can pass options object in through the method parameter.
-            if( ! instance && (typeof method === "object" || ! method)) {
+            if (!instance && (typeof method === "object" || !method)) {
                 instance = new UserScrollDisabler(this, method);
             }
 
             // Instance created, no method specified. Call disable again
-            if(instance && typeof method === "undefined") {
+            if (instance && typeof method === "undefined") {
                 instance.disable();
             }
 
             // Instance already created, and a method is being explicitly called,
             // e.g. .disablescroll('undo');
-            else if(instance && instance[method]) {
+            else if (instance && instance[method]) {
                 instance[method].call(instance);
             }
 
@@ -139,7 +147,7 @@ const preview = () => {
     // });
     // $("html, body").animate({ scrollTop: 500 }, "slow", function() {
 
-        // Enable user scrolling again when animated scrolling completes
+    // Enable user scrolling again when animated scrolling completes
 
 
     // });
@@ -156,7 +164,26 @@ const preview = () => {
     //     return false;
     // });
 
+    $('.preview__text_type_year').on('click', function () {
+        var ruleForLineBefore = CSSRulePlugin.getRule(".preview__text_type_year:before");
+        var ruleForLineAfter = CSSRulePlugin.getRule(".preview__text_type_year:after");
+        // TweenMax.fromTo(ruleForLineBefore, 1, {cssRule:{paddingRight: 1}}, {cssRule:{paddingRight: 100, ease: Power0.easeNone}});
+        var rule = CSSRulePlugin.getRule("#t1:before"); //get the rule
+        TweenMax.to(ruleForLineBefore, 1, {
+            cssRule: { left: 100 },
+            ease: Power2.easeInOut
+        });
+        // TweenMax.fromTo('.preview__text_type_line::before', 1, {paddingRight: 1}, {paddingRight: 100, ease: Power0.easeNone});
+    });
 
+
+    //click to start
+
+    let headerPosition = $('header').offset().top;
+
+    $('.preview__text_type_arrow').bind('click', function(){
+        $("html,body").animate({scrollTop: headerPosition}, 1000);
+    });
 }
 
 module.exports = preview;

@@ -9,6 +9,15 @@
         text-transform: uppercase;
         text-align: center;
 
+        &_type_line {
+            //width: 100px;
+            //height: 1px;
+            position: relative;
+            top: 100px;
+            background: orange;
+            opacity: 0;
+        }
+
         &_type_year {
             font-size: 18px;
             font-family: $font-sans-serif;
@@ -17,10 +26,22 @@
             margin: 100px 0px 90px 0px;
 
             &:before, &:after {
-                background-color: rgb(204, 204, 204);
-                width: 60px;
-                height: 1px;
                 z-index: 8;
+                content: 'This content is before.';
+                font-size: .5em;
+                padding-right: 1px;
+                margin: 0px 25px;
+                position: relative;
+                top: 6px;
+                border-top: 1px solid #000;
+            }
+
+            &:before {
+
+            }
+
+            &:after {
+
             }
         }
 
