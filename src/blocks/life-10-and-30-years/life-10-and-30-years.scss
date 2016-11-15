@@ -1,0 +1,53 @@
+.life-10-and-30-years {
+    & {
+        width: 100%;
+        padding-top: 6%;
+    }
+
+    &__name {
+        font-size: 3.7em;
+        padding-top: 3%;
+        font-family: $font-sans-serif;
+    }
+
+    &__value {
+        font-size: 2.34em;
+        font-family: $font-sans-serif;
+    }
+
+    &__date {
+        font-size: 10.67em;
+        line-height: 0.8;
+    }
+
+    &__datetext {
+        position:relative;
+        top: 1vw;
+        font-size: 1.7em;
+    }
+
+    &__datetext_top_3 {
+        top: 3vw;
+    }
+
+    &__margintop_11{
+        margin-top: 11%;
+    }
+
+    &__details {
+        padding-top: 13%;
+        font-family: $font-serif;
+    }
+
+    &__details_paddingtop_20 {
+        padding-top: 20%;
+        font-family: $font-serif;
+    }
+
+    &__info{
+        padding-top: 5%;
+    }
+
+}
+
+

@@ -1,5 +1,7 @@
-mixin b_firstlib(data)
-  +b.firstlib
+include ../paragraph/paragraph
+
+mixin b_first_lib(data)
+  +b.first-lib
     +e.line1
       +e.text1 #{data[0]}
       +e.text2 #{data[1]}
@@ -9,7 +11,8 @@ mixin b_firstlib(data)
         +e.SPAN.number #{data[4]}
         +e.SPAN.books  #{data[5]}
     +e.line2.row.expanded
-      +e.IMG.img1.columns.small-12.large-6(src="img/firstlib__img.png")
+      +e.IMG.img1.columns.small-12.large-6(src="img/first-lib__img.png")
       +e.text5.columns.large-5.large-offset-1
         +e.bigletter #{data[6]}
-        +e.text7 #{data[7]}
+        +e.text7
+          +b_paragraph(data[7])._text_left._fontsize_1dot7em
