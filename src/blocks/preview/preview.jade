@@ -3,6 +3,8 @@ include ../help-info/help-info
 
 mixin b_preview(data)
   +b("section").preview.row
+    //+b.photo-container
+    //  +e.photo
     +e.text_type_year(id="t1") #{data[0]}
     +e.text_type_gold #{data[1]}
     +e.text_type_tsn #{data[2]}

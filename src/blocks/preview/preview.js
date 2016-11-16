@@ -172,13 +172,14 @@ const preview = () => {
 
     tweenText
     // .add('in')
-        .fromTo('.preview__text_type_year', 1, {scale: 0, opacity: 0}, {scale: 1, opacity: 1, ease: Elastic.ease})
+        .fromTo('.preview__text_type_year', .5, {scale: 0, opacity: 0}, {scale: 1, opacity: 1, ease: Power0.ease})
         .fromTo(ruleForLineAfter, 1, {cssRule:{paddingRight: 1}}, {cssRule:{paddingRight: 70}, ease: Elastic.ease})
-        .fromTo('.preview__text_type_gold', 1, {x: "-=100%"}, {x: "+=100%", ease: Elastic.ease})
-        .to('.preview__text_type_link', 1, {autoAlpha: 0}, '-=1')
+        .fromTo('.preview__text_type_link', 1, {autoAlpha: 0}, {autoAlpha: 1}, '-=1')
         .to('.preview__text_type_start', 1, {scale: 1.2}, '-=1');
 
     tweenText.play();
+    TweenMax.fromTo('.preview__text_type_gold', 1, {x: "-=100%"}, {x: "+=100%", ease: Elastic.ease},)
+    TweenMax.fromTo('.preview__text_type_tsn', 1, {x: "+=100%"}, {x: "-=100%", ease: Elastic.ease})
 
     // TweenMax.fromTo(ruleForLineAfter, .3, {cssRule:{paddingRight: 1}}, {cssRule:{paddingRight: 70}, ease: Elastic.ease});
 

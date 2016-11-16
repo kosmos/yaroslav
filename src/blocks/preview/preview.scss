@@ -5,6 +5,33 @@
     text-align: center;
     transition:all .5s ease 0s;
 
+    //.photo-container {
+    //    position: relative;
+    //    width: 200px;
+    //    height: 200px;
+    //    border-radius: 50%;
+    //    overflow: hidden;
+    //    border: $yellow solid 2px;
+    //
+    //    &:after {
+    //        content: "";
+    //        display: block;
+    //        padding-bottom: 150%;
+    //    }
+    //
+    //    &__photo {
+    //        display: block;
+    //        background: url('../img/contacts.jpg') no-repeat;
+    //        background-size: cover;
+    //        position: absolute;
+    //        height: 120%;
+    //        width: 120%;
+    //        top: 0px;
+    //    }
+    //}
+
+
+
     &__text {
         text-transform: uppercase;
         text-align: center;
