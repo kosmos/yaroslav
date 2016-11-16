@@ -5,10 +5,23 @@
         font-family: $font-serif;
     }
 
+    &__line1 {
+        width: 400px;
+        height: 40px;
+        border-left-width: 2px;
+        border-bottom-width: 2px;
+        border-color: orange;
+        border-style: solid;
+        position: relative;
+        top: 500px;
+        left: 400px;
+
+    }
+
     &__centerpart {
         margin: 0 auto;
         width: 40%;
-        
+
     }
 
     &__toptext {
