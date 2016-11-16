@@ -3,56 +3,88 @@
         background-color: #111111;
         color: #ffffff;
         font-family: $font-serif;
+        text-align: center;
     }
 
     &__line1 {
-        width: 400px;
-        height: 40px;
+        width: 500px;
+        height: 200px;
         border-left-width: 2px;
         border-bottom-width: 2px;
         border-color: orange;
         border-style: solid;
-        position: relative;
-        top: 500px;
-        left: 400px;
+        position: absolute;
+     /*   right: 100%;
+        margin-right: -35%;*/
 
+    }
+
+    &__line2 {
+        width: 500px;
+        height: 200px;
+        border-left-width: 2px;
+        border-bottom-width: 2px;
+        border-color: orange;
+        border-style: solid;
+        position: absolute;
+/*        right: 100%;
+        margin-right: -35%;*/
+
+    }
+
+    &__text3{
+        position: absolute;
+        width: 200px;
+        opacity: 0;
     }
 
     &__centerpart {
         margin: 0 auto;
-        width: 40%;
+        display: inline-block;
+        text-align: center;
 
     }
 
     &__toptext {
-        text-align: right;
+        display: block;
+        text-align: center;
         font-size: 4em;
         font-family: $font-sans-serif;
     }
 
     &__text1 {
-        width: 44%;
-        float: right;
+        display: block;
         text-align: right;
         font-size: 1.7em;
         padding-top: 4%;
+        width: 40%;
+        float: right;
+        clear: right;
     }
 
     &__text2 {
-        float: right;
+        display: block;
         text-align: right;
-        clear: right;
         text-transform: uppercase;
         font-size: 0.9em;
         padding-top: 3%;
+        float: right;
+        clear: right;
     }
 
     &__img {
         display: block;
         margin: 0 auto;
         width: 100%;
-        padding-top: 8%;
 
     }
+
+    &__imgblock {
+        width: 60%;
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+
 
 }
