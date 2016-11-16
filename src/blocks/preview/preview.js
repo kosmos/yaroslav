@@ -1,9 +1,10 @@
 import $ from 'jquery';
-// import TweenLite from 'TweenLite';
-// require('animation.gsap');
+import ScrollMagic from 'ScrollMagic';
+import debugIndicators from 'debugIndicators';
 import TweenMax from 'TweenMax';
 import CSSPlugin from 'CSSPlugin';
 import CSSRulePlugin from 'CSSRulePlugin';
+import animationGsap from 'animation.gsap';
 
 
 
@@ -164,21 +165,28 @@ const preview = () => {
     //     return false;
     // });
 
-    $('.preview__text_type_year').on('click', function () {
-        var ruleForLineBefore = CSSRulePlugin.getRule(".preview__text_type_year:before");
-        var ruleForLineAfter = CSSRulePlugin.getRule(".preview__text_type_year:after");
-        // TweenMax.fromTo(ruleForLineBefore, 1, {cssRule:{paddingRight: 1}}, {cssRule:{paddingRight: 100, ease: Power0.easeNone}});
-        var rule = CSSRulePlugin.getRule("#t1:before"); //get the rule
-        TweenMax.to(ruleForLineBefore, 1, {
-            cssRule: { left: 100 },
-            ease: Power2.easeInOut
-        });
-        // TweenMax.fromTo('.preview__text_type_line::before', 1, {paddingRight: 1}, {paddingRight: 100, ease: Power0.easeNone});
+    //animation
+    var ruleForLineAfter = CSSRulePlugin.getRule(".preview__text_type_year:after");
+
+    $(document).ready(function () {
+        TweenMax.fromTo(ruleForLineAfter, 1, {cssRule:{paddingRight: 1}}, {cssRule:{paddingRight: 70}, ease: Elastic.ease});
     });
+
+    var tween = TweenMax.fromTo(ruleForLineAfter, 1, {cssRule:{paddingRight: 71}}, {cssRule:{paddingRight: 130}, ease: Elastic.ease});
+    var controller = new ScrollMagic.Controller();
+    var scene = new ScrollMagic.Scene({
+        triggerElement: ".preview",
+        duration: 350,
+        triggerHook: 0,
+        offset: 20
+        // loglevel: 3
+    })
+        .addIndicators({name: 'PreviewIndicator', colorStart: '  yellow'})
+        .setTween(tween)
+        .addTo(controller);
 
 
     //click to start
-
     let headerPosition = $('header').offset().top;
 
     $('.preview__text_type_arrow').bind('click', function(){

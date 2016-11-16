@@ -27,7 +27,7 @@
 
             &:before, &:after {
                 z-index: 8;
-                content: 'This content is before.';
+                content: '';
                 font-size: .5em;
                 padding-right: 1px;
                 margin: 0px 25px;
