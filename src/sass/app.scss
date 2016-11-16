@@ -11,3 +11,23 @@
 @import "main";
 
 //= include ../blocks/**/*.scss
+
+html {
+    font-size: 100%;
+
+    @include r(1440) {
+        font-size: 100%;
+    }
+
+    @include r(1200) {
+        font-size: 90%;
+    }
+
+    @include r(1024) {
+        font-size: 80%;
+    }
+
+    @include r(640) {
+        font-size: 60%;
+    }
+}
