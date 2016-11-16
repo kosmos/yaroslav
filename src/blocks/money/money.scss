@@ -4,7 +4,6 @@
     &__main {
         background-image: url("../img/money_background.png");
         background-attachment: fixed;
-       // background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
         position: relative;
@@ -16,7 +15,7 @@
     &__text {
         position: absolute;
         padding-top: 17%;
-        font-size: 30px;
+        font-size: 2.5em;
         left: 50%;
         width: 50px;
         margin-left: -25px;
@@ -24,13 +23,13 @@
     }
 
     &__text1 {
-        font-size: 50px;
+        font-size: 4.17em;
         font-family: Playfair Display,serif;
     }
 
     &__text2 {
-        padding-top: 30px;
-        font-size: 19px;
+        padding-top: 9%;
+        font-size: 1.58em;
         text-transform: uppercase;
         text-align: center;
         font-family: Playfair Display,serif;

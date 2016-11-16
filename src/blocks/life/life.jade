@@ -1,7 +1,9 @@
+include ../paragraph/paragraph
+
 mixin b_life(data)
   +b.life.row.expanded
-    +b.IMG.life__img1.columns.small-11.medium-10.madium-offset-2.large-5(src="img/life__photo.png")
-    +b.life__textarea.columns.small-12.medium-12.large-7
+    +e.IMG.img1.columns.small-11.medium-10.madium-offset-2.large-5(src="img/life__photo.png")
+    +e.textarea.columns.small-12.medium-12.large-7
       +e.livedates
         +e.SPAN.date #{data[0]}
         +e.SPAN.dateup #{data[1]}
@@ -9,6 +11,7 @@ mixin b_life(data)
         +e.SPAN.date #{data[3]}
       +e.centeredtext1 #{data[4]}
       +e.centeredtext2 #{data[5]}
-      +e.centeredtext3 #{data[6]}
+      +e.centeredtext3
+        +b_paragraph(data[6])._fontsize_1dot7em._type_grey._text_center
 
 
