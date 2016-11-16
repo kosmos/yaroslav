@@ -168,9 +168,19 @@ const preview = () => {
     //animation
     var ruleForLineAfter = CSSRulePlugin.getRule(".preview__text_type_year:after");
 
-    $(document).ready(function () {
-        TweenMax.fromTo(ruleForLineAfter, 1, {cssRule:{paddingRight: 1}}, {cssRule:{paddingRight: 70}, ease: Elastic.ease});
-    });
+    var tweenText = new TimelineMax();
+
+    tweenText
+    // .add('in')
+        .fromTo('.preview__text_type_year', 1, {scale: 0, opacity: 0}, {scale: 1, opacity: 1, ease: Elastic.ease})
+        .fromTo(ruleForLineAfter, 1, {cssRule:{paddingRight: 1}}, {cssRule:{paddingRight: 70}, ease: Elastic.ease})
+        .fromTo('.preview__text_type_gold', 1, {x: "-=100%"}, {x: "+=100%", ease: Elastic.ease})
+        .to('.preview__text_type_link', 1, {autoAlpha: 0}, '-=1')
+        .to('.preview__text_type_start', 1, {scale: 1.2}, '-=1');
+
+    tweenText.play();
+
+    // TweenMax.fromTo(ruleForLineAfter, .3, {cssRule:{paddingRight: 1}}, {cssRule:{paddingRight: 70}, ease: Elastic.ease});
 
     var tween = TweenMax.fromTo(ruleForLineAfter, 1, {cssRule:{paddingRight: 71}}, {cssRule:{paddingRight: 130}, ease: Elastic.ease});
     var controller = new ScrollMagic.Controller();

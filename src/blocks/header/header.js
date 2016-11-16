@@ -16,13 +16,13 @@ const help = () => {
 
     //animation
     let _headerHeight = $('header').height();
-    const tween = TweenMax.fromTo('.over', .1, {height: 0}, {height: _headerHeight, ease: Power0.ease})
+    const tween = TweenMax.fromTo('.caption', .1, {height: 0}, {height: _headerHeight, ease: Power0.ease})
     var controller = new ScrollMagic.Controller();
     var scene = new ScrollMagic.Scene({
         triggerElement: ".header",
         duration: window.innerHeight + _headerHeight - 150,
-        triggerHook: .35,
-        offset: -250
+        triggerHook: .85,
+        offset: 0
         // loglevel: 3
     })
         .addIndicators({name: 'Header_OverIndicator', colorStart: '  green'})

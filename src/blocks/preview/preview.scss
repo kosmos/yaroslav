@@ -24,12 +24,13 @@
             color: rgb(51, 51, 51);
             z-index: 7;
             margin: 100px 0px 90px 0px;
+            opacity: 0;
 
             &:before, &:after {
                 z-index: 8;
                 content: '';
                 font-size: .5em;
-                padding-right: 1px;
+                padding-right: 0px;
                 margin: 0px 25px;
                 position: relative;
                 top: 6px;
@@ -52,6 +53,7 @@
             letter-spacing: 5px;
             color: $yellow;
             z-index: 5;
+            left: -100%;
         }
 
         &_type_tsn {
