@@ -6,6 +6,11 @@ import CSSPlugin from 'CSSPlugin';
 import CSSRulePlugin from 'CSSRulePlugin';
 import animationGsap from 'animation.gsap';
 
+// import { TweenLite, TweenMax, TimelineMax } from "gsap";
+// import { CSSPlugin, CSSRulePlugin} from "gsap/plugins";
+// import { Draggable, SplitText } from "gsap/utils";
+// import { Back, Power4 } from "gsap/easing";
+
 
 
 const preview = () => {
@@ -166,30 +171,55 @@ const preview = () => {
     // });
 
     //animation
-    var ruleForLineAfter = CSSRulePlugin.getRule(".preview__text_type_year:after");
+    var parent = '.preview__text';
+    var modifier = '_type_';
+    var _year = $(parent + modifier + 'year');
+    var _gold = $(parent + modifier + 'gold');
+    var _tsn = $(parent + modifier + 'tsn');
+    var _link = $(parent + modifier + 'link');
+    var _stamp = $(parent + modifier + 'stamp');
+    var _start= $(parent + modifier + 'start');
+    var _arrow= $(parent + modifier + 'arrow');
+    var ruleForLineAfter = CSSRulePlugin.getRule(parent + modifier + "year:after");
+    var ruleForLinkAfter = CSSRulePlugin.getRule(parent + modifier + "link:after");
+    var ruleForLinkBefore = CSSRulePlugin.getRule(parent + modifier + "link:before");
 
-    var tweenText = new TimelineMax();
+    var tweenPreview = new TimelineMax();
 
-    tweenText
-    // .add('in')
-        .fromTo('.preview__text_type_year', .5, {scale: 0, opacity: 0}, {scale: 1, opacity: 1, ease: Power0.ease})
-        .fromTo(ruleForLineAfter, 1, {cssRule:{paddingRight: 1}}, {cssRule:{paddingRight: 70}, ease: Elastic.ease})
-        .fromTo('.preview__text_type_link', 1, {autoAlpha: 0}, {autoAlpha: 1}, '-=1')
-        .to('.preview__text_type_start', 1, {scale: 1.2}, '-=1');
+    // function getStaggerAnimation() {
+    //     var staggerTimeline = new TimelineLite();
+    //     staggerTimeline
+    //         .from(_link, 0.2, {width: 0, opacity:0})
+    //         .staggerFrom(_link, 0.6, {width: "", left:"-=50px", ease:Back.easeOut}, 0.1)
+    //         .to(_link, 1, {opacity:1});
+    //     return staggerTimeline;
+    // }
 
-    tweenText.play();
-    TweenMax.fromTo('.preview__text_type_gold', 1, {x: "-=100%"}, {x: "+=100%", ease: Elastic.ease},)
-    TweenMax.fromTo('.preview__text_type_tsn', 1, {x: "+=100%"}, {x: "-=100%", ease: Elastic.ease})
+    tweenPreview
+        .add('in')
+        .fromTo(_gold, 1, {x: "-=100%"}, {x: "+=100%", ease: Elastic.ease}, 'in')
+        .fromTo(_tsn, 1, {x: "+=100%"}, {x: "-=100%", ease: Elastic.ease}, 'in')
+        .fromTo(_year, .5, {scale: 0, opacity: 0}, {scale: 1, opacity: 1, delay: .7, ease: Back.easeOut}, 'in')
+        .fromTo(ruleForLineAfter, .8, {cssRule:{paddingRight: 1}}, {cssRule:{paddingRight: 140}, delay: 0.5, ease: Back.easeIn}, 'in')
+        .to(_link, .5, {top:"-=30px", alpha:1, scale:1, delay: 1.5, ease:Back.easeOut}, 'in')
+        .fromTo(ruleForLinkAfter, .5, {cssRule:{x: "-=100%", opacity: 0}}, {cssRule:{x: "+=100%", opacity: 1}, delay: 2, ease: Back.easeOut}, 'in')
+        .fromTo(ruleForLinkBefore, .5, {cssRule:{x: "+=20%", opacity: 0}}, {cssRule:{x: "-=120%", opacity: 1}, delay: 2, ease: Back.easeOut}, 'in')
+        .staggerFrom(_start, .5, {top:"-=30px", alpha:0, scale:3.8, ease:Back.easeOut}, 'in')
+        .to(_stamp, .7, {opacity: 1, rotation: "0deg", delay: 2.2}, "in")
+        .from(_arrow, .5, {height:"0px", alpha:0}, "-=0.02")
+        // .add(getStaggerAnimation(), "stagger");
 
-    // TweenMax.fromTo(ruleForLineAfter, .3, {cssRule:{paddingRight: 1}}, {cssRule:{paddingRight: 70}, ease: Elastic.ease});
+    tweenPreview.play();
 
-    var tween = TweenMax.fromTo(ruleForLineAfter, 1, {cssRule:{paddingRight: 71}}, {cssRule:{paddingRight: 130}, ease: Elastic.ease});
+    // TweenMax.fromTo(_tsn, 1, {x: "+=100%"}, {x: "-=100%", ease: Elastic.ease});
+
+    var tween = TweenMax.fromTo(ruleForLineAfter, 1, {cssRule:{paddingRight: 141}}, {cssRule:{paddingRight: 70}, ease: Elastic.ease});
     var controller = new ScrollMagic.Controller();
     var scene = new ScrollMagic.Scene({
         triggerElement: ".preview",
         duration: 350,
         triggerHook: 0,
-        offset: 20
+        offset: 10
         // loglevel: 3
     })
         .addIndicators({name: 'PreviewIndicator', colorStart: '  yellow'})

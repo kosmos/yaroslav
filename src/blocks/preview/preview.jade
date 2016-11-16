@@ -2,7 +2,7 @@ include ../stamp/stamp
 include ../help-info/help-info
 
 mixin b_preview(data)
-  +b("section").preview.row
+  +b("section").preview.row.columns.expanded
     //+b.photo-container
     //  +e.photo
     +e.text_type_year(id="t1") #{data[0]}
