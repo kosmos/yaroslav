@@ -14,6 +14,8 @@
         right: 30%;
         top: 50px;
         width: 50px;
+        box-sizing: content-box;
+        padding-bottom: 25px;
     }
 
 }
@@ -24,7 +26,7 @@
     position: relative;
 
     &__circle {
-        border-width: 1px;
+        border-width: 3px;
         border-color: rgb(223, 184, 63);
         border-style: dotted;
         border-radius: 50%;

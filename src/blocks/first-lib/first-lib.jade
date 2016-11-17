@@ -1,7 +1,7 @@
 include ../paragraph/paragraph
 
 mixin b_first_lib(data)
-  +b.first-lib
+  +b.first-lib(id='#{menu.links[4]}')
     +e.line1
       +e.text1 #{data[0]}
       +e.text2 #{data[1]}
@@ -15,4 +15,4 @@ mixin b_first_lib(data)
       +e.text5.columns.large-5.large-offset-1
         +e.bigletter #{data[6]}
         +e.text7
-          +b_paragraph(data[7])._text_left._fontsize_1dot7em
+          +b_paragraph(data[7])._text_left

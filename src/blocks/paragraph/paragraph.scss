@@ -1,7 +1,7 @@
 .paragraph {
 
     font-family: $font-serif;
-    font-size: 1em;
+    font-size: .75rem;
 
     &_type_grey {
         color: $grey;
@@ -31,7 +31,7 @@
         line-height: 1.667;
     }
 
-    &_fontsize_1dot7em {
-        font-size: 1.7em;
-    }
+    //&_fontsize_1dot7em {
+    //    font-size: 1.7em;
+    //}
 }
