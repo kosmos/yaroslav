@@ -171,20 +171,20 @@ const preview = () => {
     // });
 
     //animation
-    var parent = '.preview__text';
-    var modifier = '_type_';
-    var _year = $(parent + modifier + 'year');
-    var _gold = $(parent + modifier + 'gold');
-    var _tsn = $(parent + modifier + 'tsn');
-    var _link = $(parent + modifier + 'link');
-    var _stamp = $(parent + modifier + 'stamp');
-    var _start= $(parent + modifier + 'start');
-    var _arrow= $(parent + modifier + 'arrow');
-    var ruleForLineAfter = CSSRulePlugin.getRule(parent + modifier + "year:after");
-    var ruleForLinkAfter = CSSRulePlugin.getRule(parent + modifier + "link:after");
-    var ruleForLinkBefore = CSSRulePlugin.getRule(parent + modifier + "link:before");
+    const parent = '.preview__text';
+    const modifier = '_type_';
+    const _year = $(parent + modifier + 'year');
+    const _gold = $(parent + modifier + 'gold');
+    const _tsn = $(parent + modifier + 'tsn');
+    const _link = $(parent + modifier + 'link');
+    const _stamp = $(parent + modifier + 'stamp');
+    const _start= $(parent + modifier + 'start');
+    const _arrow= $(parent + modifier + 'arrow');
+    const ruleForLineAfter = CSSRulePlugin.getRule(parent + modifier + "year:after");
+    const ruleForLinkAfter = CSSRulePlugin.getRule(parent + modifier + "link:after");
+    const ruleForLinkBefore = CSSRulePlugin.getRule(parent + modifier + "link:before");
 
-    var tweenPreview = new TimelineMax();
+    const tweenPreview = new TimelineMax();
 
     // function getStaggerAnimation() {
     //     var staggerTimeline = new TimelineLite();
@@ -197,15 +197,15 @@ const preview = () => {
 
     tweenPreview
         .add('in')
-        .fromTo(_gold, 1, {x: "-=100%"}, {x: "+=100%", ease: Elastic.ease}, 'in')
-        .fromTo(_tsn, 1, {x: "+=100%"}, {x: "-=100%", ease: Elastic.ease}, 'in')
-        .fromTo(_year, .5, {scale: 0, opacity: 0}, {scale: 1, opacity: 1, delay: .7, ease: Back.easeOut}, 'in')
-        .fromTo(ruleForLineAfter, .8, {cssRule:{paddingRight: 1}}, {cssRule:{paddingRight: 140}, delay: 0.5, ease: Back.easeIn}, 'in')
+        .fromTo(_gold, 1, {x: "-=100%"}, {x: "+=100%", alpha: 1, ease: Elastic.ease}, 'in')
+        .fromTo(_tsn, 1, {x: "+=100%"}, {x: "-=100%", alpha: 1, ease: Elastic.ease}, 'in')
+        .fromTo(_year, .5, {scale: 0}, {scale: 1, alpha: 1, delay: .7, ease: Back.easeOut}, 'in')
+        .fromTo(ruleForLineAfter, .8, {cssRule:{paddingRight: 1}}, {cssRule:{paddingRight: 140, alpha: 1}, delay: 0.5, ease: Back.easeIn}, 'in')
         .to(_link, .5, {top:"-=30px", alpha:1, scale:1, delay: 1.5, ease:Back.easeOut}, 'in')
         .fromTo(ruleForLinkAfter, .5, {cssRule:{x: "-=100%", opacity: 0}}, {cssRule:{x: "+=100%", opacity: 1}, delay: 2, ease: Back.easeOut}, 'in')
         .fromTo(ruleForLinkBefore, .5, {cssRule:{x: "+=20%", opacity: 0}}, {cssRule:{x: "-=120%", opacity: 1}, delay: 2, ease: Back.easeOut}, 'in')
         .staggerFrom(_start, .5, {top:"-=30px", alpha:0, scale:3.8, ease:Back.easeOut}, 'in')
-        .to(_stamp, .7, {opacity: 1, rotation: "0deg", delay: 2.2}, "in")
+        .to(_stamp, .7, {alpha: 1, rotation: "0deg", delay: 2.2}, "in")
         .from(_arrow, .5, {height:"0px", alpha:0}, "-=0.02")
         // .add(getStaggerAnimation(), "stagger");
 
@@ -213,9 +213,9 @@ const preview = () => {
 
     // TweenMax.fromTo(_tsn, 1, {x: "+=100%"}, {x: "-=100%", ease: Elastic.ease});
 
-    var tween = TweenMax.fromTo(ruleForLineAfter, 1, {cssRule:{paddingRight: 141}}, {cssRule:{paddingRight: 70}, ease: Elastic.ease});
-    var controller = new ScrollMagic.Controller();
-    var scene = new ScrollMagic.Scene({
+    const tween = TweenMax.fromTo(ruleForLineAfter, 1, {cssRule:{paddingRight: 141}}, {cssRule:{paddingRight: 70}, ease: Elastic.ease});
+    const controller = new ScrollMagic.Controller();
+    const scene = new ScrollMagic.Scene({
         triggerElement: ".preview",
         duration: 350,
         triggerHook: 0,
@@ -224,6 +224,7 @@ const preview = () => {
     })
         .addIndicators({name: 'PreviewIndicator', colorStart: '  yellow'})
         .setTween(tween)
+        // .setTween(tweenPreview)
         .addTo(controller);
 
 

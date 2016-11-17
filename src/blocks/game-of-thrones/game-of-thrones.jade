@@ -1,7 +1,7 @@
 include ../paragraph/paragraph
 
 mixin b_game_of_thrones(data)
-  +b.game-of-thrones
+  +b.game-of-thrones(id='#{menu.links[1]}')
     +e.mainname #{data[0]}
     +e.shortnote #{data[1]}
     +e.details

@@ -1,7 +1,7 @@
 include ../paragraph/paragraph
 
 mixin b_life_10_30_years(data)
-  +b.life-10-and-30-years.row.expanded
+  +b.life-10-and-30-years.row.expanded(id='#{menu.links[0]}')
     +e.years.columns.small-12.medium-5.madium-offset-1.large-3.large-offset-2
       +e.name #{data[0]}
       +e.value

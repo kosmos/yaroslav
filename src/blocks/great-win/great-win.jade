@@ -1,7 +1,7 @@
 include ../paragraph/paragraph
 
 mixin b_great_win(data)
-  +b.great-win
+  +b.great-win(id='#{menu.links[2]}')
     +e.main.row.expanded
         +e.text(class="columns small-12 medium-12 large-5")
           +e.toptext #{data[0]}

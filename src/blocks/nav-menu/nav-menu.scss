@@ -155,15 +155,12 @@
                 content: '\e040';
             }
         }
-    }
 
-    &__share {
-
-        &_type_facebook.is-color{
+        &_type_facebook.is-color {
             background-color: #3e5b98;
         }
 
-        &_type_vkontakte.is-color{
+        &_type_vkontakte.is-color {
             background-color: #5a7fa6;
         }
 

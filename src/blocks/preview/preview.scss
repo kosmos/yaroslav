@@ -74,6 +74,7 @@
             color: $yellow;
             z-index: 5;
             left: -100%;
+            opacity: 0;
         }
 
         &_type_tsn {
@@ -85,6 +86,7 @@
             line-height: 2.143;
             z-index: 10;
             margin: 0px 0px 40px 0px;
+            opacity: 0;
         }
 
         &_type_link {

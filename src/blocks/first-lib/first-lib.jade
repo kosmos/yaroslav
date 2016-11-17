@@ -1,7 +1,7 @@
 include ../paragraph/paragraph
 
 mixin b_first_lib(data)
-  +b.first-lib
+  +b.first-lib(id='#{menu.links[4]}')
     +e.line1
       +e.text1 #{data[0]}
       +e.text2 #{data[1]}
