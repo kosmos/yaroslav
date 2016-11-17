@@ -4,6 +4,34 @@
     height: 100vh;
     text-align: center;
     transition:all .5s ease 0s;
+    overflow: hidden;
+
+    //.photo-container {
+    //    position: relative;
+    //    width: 200px;
+    //    height: 200px;
+    //    border-radius: 50%;
+    //    overflow: hidden;
+    //    border: $yellow solid 2px;
+    //
+    //    &:after {
+    //        content: "";
+    //        display: block;
+    //        padding-bottom: 150%;
+    //    }
+    //
+    //    &__photo {
+    //        display: block;
+    //        background: url('../img/contacts.jpg') no-repeat;
+    //        background-size: cover;
+    //        position: absolute;
+    //        height: 120%;
+    //        width: 120%;
+    //        top: 0px;
+    //    }
+    //}
+
+
 
     &__text {
         text-transform: uppercase;
@@ -19,65 +47,66 @@
         }
 
         &_type_year {
-            font-size: 18px;
+            font-size: 1.125rem;
             font-family: $font-sans-serif;
             color: rgb(51, 51, 51);
             z-index: 7;
             margin: 100px 0px 90px 0px;
+            opacity: 0;
 
             &:before, &:after {
                 z-index: 8;
-                content: 'This content is before.';
-                font-size: .5em;
+                content: '';
+                font-size: .5rem;
                 padding-right: 1px;
                 margin: 0px 25px;
                 position: relative;
                 top: 6px;
                 border-top: 1px solid #000;
             }
-
-            &:before {
-
-            }
-
-            &:after {
-
-            }
         }
 
         &_type_gold {
             font-family: $font-sans-serif;
-            font-size: 36px;
+            font-size: 2.25rem;
             font-weight: 400;
             letter-spacing: 5px;
             color: $yellow;
             z-index: 5;
+            left: -100%;
+            opacity: 0;
         }
 
         &_type_tsn {
             font-family: $font-serif;
-            font-size: 14px;
+            font-size: .9rem;
             font-weight: 200;
             letter-spacing: 2px;
             color: $grey;
             line-height: 2.143;
             z-index: 10;
             margin: 0px 0px 40px 0px;
+            opacity: 0;
         }
 
         &_type_link {
-            font-size: 12px;
+            font-size: .8rem;
             text-decoration: none;
             color: rgb(51, 51, 51);
             line-height: 2.5;
             z-index: 11;
-            margin-bottom: 50px;
+            margin-bottom: 10%;
             cursor: pointer;
+            position: relative;
+            transform: scale(2);
+            opacity: 0;
 
             &:before, &:after {
                 color: $yellow;
                 padding: 0px 7px;
                 margin-top: -1px;
+                position: absolute;
+                opacity: 0;
             }
 
             &:before {
@@ -90,7 +119,7 @@
         }
 
         &_type_start {
-            font-size: 12px;
+            font-size: .75rem;
             font-family: $font-serif;
             color: rgb(153, 153, 153);
             z-index: 6;
@@ -111,6 +140,8 @@
             display: block;
             text-align: center;
             margin: 0px auto 40px;
+            @include rotate(-180);
+            opacity: 0;
         }
     }
 }

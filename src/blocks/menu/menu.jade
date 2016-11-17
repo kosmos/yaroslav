@@ -1,18 +1,18 @@
 mixin b_menu(data)
   +b.NAV.navigation.expanded.column.row
-    +e.block._diagonal.small-6.columns
+    +e.block._diagonal_white.small-6.columns
       +b.UL.navigation-list
-        each val, index in data
+        each val, index in data.titles
           - var num = index+1
-          +menuitem(num, val)
+          +menuitem(num, val, data.links[index])
 
     +e.block.small-6.columns
-      +b.nav-preview
+      //+b.nav-preview
     +b.SPAN.close
 
-mixin menuitem(number, value)
+mixin menuitem(number, value, link)
   - var percentage = -12
-  +e(style="margin-right: #{percentage + number*2}%" data-order="#{number}").LI.item
+  +e(style="margin-right: #{percentage + number*2}%" data-order="#{number}" data-href="#{link}").LI.item
     +e.SPAN.value= value
     +e.SPAN.dots
     +e.SPAN.number= "0" + number

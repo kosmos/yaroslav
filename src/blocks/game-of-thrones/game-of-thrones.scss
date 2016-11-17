@@ -1,9 +1,9 @@
-.game-of-thrones {
+.games-of-thrones {
     text-align: center;
     font-family: $font-serif;
 
     &__mainname {
-        font-size: 4em;
+        font-size: 3rem;
         font-family: $font-sans-serif;
         margin-top: 7%;
     }
@@ -11,14 +11,13 @@
     &__shortnote {
         text-transform: uppercase;
         color: $grey;
-        font-size: 1.7em;
+        font-size: 1.125rem;
+        line-height: 1.667;
         letter-spacing: 0.12em;
-        margin: 1.9% auto 0 auto;
-        width: 26%;
+        margin: 0 auto;
     }
 
     &__details {
-        margin: 1.9% auto 5% auto;
-        width: 32%;
+        margin: 2% auto 5%;
     }
 }

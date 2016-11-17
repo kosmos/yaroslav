@@ -45,9 +45,16 @@ function createConfig(env) {
                 "TimelineLite": path.resolve('node_modules', 'gsap/src/uncompressed/TimelineLite.js'),
                 "TimelineMax": path.resolve('node_modules', 'gsap/src/uncompressed/TimelineMax.js'),
                 "ScrollMagic": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'),
+                "debugIndicators": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js'),
                 "animation.gsap": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'),
                 "CSSPlugin": path.resolve('node_modules', 'gsap/src/uncompressed/plugins/CSSPlugin.js'),
-                "CSSRulePlugin": path.resolve('node_modules', 'gsap/src/uncompressed/plugins/CSSRulePlugin.js')
+                "CSSRulePlugin": path.resolve('node_modules', 'gsap/src/uncompressed/plugins/CSSRulePlugin.js'),
+                "ScrollToPlugin": path.resolve('node_modules', 'gsap/src/uncompressed/plugins/ScrollToPlugin.js'),
+
+                // "ScrollMagic": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'),
+                // "gsap": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'),
+                // "gsap/plugins": path.resolve('node_modules', 'gsap/src/uncompressed/plugins/'),
+                // "gsap/utils": path.resolve('node_modules', 'gsap/src/uncompressed/utils/')
             },
             extensions: ['', '.js']
         },

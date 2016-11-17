@@ -1,19 +1,19 @@
 include ../paragraph/paragraph
 
 mixin b_life_10_30_years(data)
-  +b.life-10-and-30-years.row.expanded
+  +b.life-10-and-30-years.row.expanded(id='#{menu.links[0]}')
     +e.years.columns.small-12.medium-5.madium-offset-1.large-3.large-offset-2
       +e.name #{data[0]}
       +e.value
         +e.SPAN.date #{data[1]}
         +e.SPAN.datetext #{data[2]}
       +e.details
-        +b_paragraph(data[3])._text_left._fontsize_1dot7em
+        +b_paragraph(data[3])._text_left
     +e.years.__margintop_11.columns.small-9.small-offset-3.medium-5.medium-offset-1.large-3.large-offset-2.end
       +e.value
         +e.SPAN.date #{data[4]}
         +e.SPAN.datetext._top_3 #{data[5]}
        +e.details._paddingtop_20
-         +b_paragraph(data[6])._text_left._fontsize_1dot7em
+         +b_paragraph(data[6])._text_left
       +e.IMG.info(src="img/life-10-and-30-years__info.png")
     +e(style='clear: both;')
