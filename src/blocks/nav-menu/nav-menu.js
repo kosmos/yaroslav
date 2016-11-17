@@ -8,6 +8,7 @@ import animationGsap from 'animation.gsap';
 
 const navigation = () => {
 
+    const _header = $('.header');
     const _hamburger = $('.hamburger');
     const _navigation = $('.navigation');
     const _navigationMenu = $('.nav-menu');
@@ -24,11 +25,13 @@ const navigation = () => {
     });
 
     navHideTl
+        .set(_header, {className: '-=header_position_fixed'})
         .set(_navigationMenu, {className: '-=nav-menu_position_fixed'})
         .set(_navigation, {className: '-=navigation_position_fixed'})
         .set(_navigation, {className: '-=is-active'});
 
     navShowTl
+        .set(_header, {className: '+=header_position_fixed'})
         .set(_navigationMenu, {className: '+=nav-menu_position_fixed'})
         .set(_navigation, {className: '+=navigation_position_fixed'})
         .set(_navigation, {className: '+=is-active'});
@@ -36,7 +39,7 @@ const navigation = () => {
     const tweenMenu = new TimelineMax({
         delay: 0.2
     });
-    tweenMenu.staggerFrom(_menuItem, 2, {scale: 0.5, left: "100%", opacity: 0, delay: 0.5, ease: Elastic.easeOut, force3D: true}, 0.2);
+    tweenMenu.staggerFrom(_menuItem, 2, {scale: 0.5, left: "100%", opacity: 0, delay: .75, ease: Elastic.easeOut, force3D: true}, 0.2);
 
     const socList = function () {
         if (_socList.is(":visible")) {
