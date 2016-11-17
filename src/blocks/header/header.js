@@ -43,7 +43,7 @@ const help = () => {
         triggerElement: ".header",
         // duration: window.innerHeight + _headerHeight/2,
         triggerHook: 0.45,
-        offset: -50,
+        offset: -100,
         reverse: true
         // loglevel: 3
     });
