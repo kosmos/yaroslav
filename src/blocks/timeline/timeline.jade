@@ -1,0 +1,7 @@
+mixin b_timeline(data)
+  +b.SECTION.timeline.row.expanded&attributes(attributes)
+    +e.map
+    +b.timeline-history
+      +e.UL.list
+        each val, index in data
+          +e.year.
