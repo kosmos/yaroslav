@@ -15,21 +15,29 @@ const menu = () => {
     const _menuItemValue = $('.navigation-list__value');
     const _hamburger = $('.hamburger');
 
-    const tweenMenu = new TimelineMax({
-        delay: 0
-    });
-
-    tweenMenu
-        .staggerFrom(_menuItem, 2, {scale:0.5, left: "100%", opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
-
-    _hamburger.on('click', function(){
-        tweenMenu.restart(true);
-    });
+    // const tweenMenu = new TimelineMax({
+    //     delay: 0.2
+    // });
+    // tweenMenu.staggerFrom(_menuItem, 2, {scale:0.5, left: "100%", opacity:0, delay:0.5, ease:Elastic.easeOut, force3D:true}, 0.2);
+    //
+    // _hamburger.on('click', function(){
+    //
+    //     // setTimeout(function(){
+    //     //     if(_navigation.hasClass('is-active')){
+    //     //         TweenMax.set(_navigationMenu, {className: '-=nav-menu_position_fixed'});
+    //     //         TweenMax.set(_navigation, {className: '-=navigation_position_fixed'});
+    //     //     } else{
+    //     //         TweenMax.set(_navigationMenu, {className: '+=nav-menu_position_fixed'});
+    //     //         TweenMax.set(_navigation, {className: '+=navigation_position_fixed'});
+    //     //     }
+    //     // }, 100);
+    //
+    //     tweenMenu.restart(true);
+    // });
 
     _menuItemValue.on('mouseover', function(){
         let _this = $(this);
         let attributes = _this.parent().data()
-        console.info(attributes);
         TweenMax.to(window, 1, {scrollTo: {y: "#" + attributes.href, offsetY: 0}});
     });
 
