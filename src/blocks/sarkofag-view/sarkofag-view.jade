@@ -4,9 +4,16 @@ mixin b_sarkofag-view(data)
       +e.toptext #{data[0]}
       +e.text1 #{data[1]}
       +e.text2 #{data[2]}
-    +e.imgblock
-      +e.text3 #{data[3]}
-      +e.line1
-      +e.line2
-      +e.IMG.img(src="img/sarkofag-view__photo.png")
+    +e.positioning
+      +e.imgblock
+        +e.line1
+        +e.line2
+        +e.line3
+        +e.text3
+          +b_paragraph(data[3])._text_left
+        +e.text4
+          +b_paragraph(data[5])._text_left
+        +e.text5
+          +b_paragraph(data[4])._text_right
+        +e.IMG.img(src="img/sarkofag-view__photo.png")
 
