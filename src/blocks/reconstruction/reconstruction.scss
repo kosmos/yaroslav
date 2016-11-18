@@ -37,5 +37,14 @@ $reconstruction-line-width: 200%;
 	&__bg {
 		position: absolute;
 		height: 80%;
+		width: 45%;
+		border: solid white 3px;
+		top: 10%;
+		left: 27.5%;
+		background-image: url('../img/rec-bg.jpg');
+	    background-color: $black;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center; 
 	}
 }
