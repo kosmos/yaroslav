@@ -44,7 +44,21 @@ $reconstruction-line-width: 200%;
 		background-image: url('../img/rec-bg.jpg');
 	    background-color: $black;
 		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-position: center; 
+		// background-attachment: fixed;
+		background-position: center;
+	}
+
+	&__profile {
+		position: absolute;
+		width: 70%;
+		top: 11%;
+		left: 37%;
+	}
+
+	&__fass {
+		position: absolute;
+		width: 70%;
+		top: 10%;
+		left: -6.5%;
 	}
 }
