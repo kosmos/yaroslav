@@ -1,0 +1,12 @@
+include ../h2/h2
+include ../reconstruction/reconstruction
+
+mixin b_section-appearance(data)
+	+b("section").section-appearance&attributes(attributes) 
+		+b_h2("Зовнішність Ярослава")._color_white
+		+e("h3").second-header реконструкція М.М. Герасимова
+		+e.reconstruction.row.expanded
+			.small-4.small-offset-4.columns
+				+b_reconstruction()
+		.row.expanded
+			+e.text.small-4.small-offset-4.columns Антропологічні дослідження скульптора Михайла Герасимова показали:  у зовнішності Ярослава Мудрого переважали риси властиві слов'янам Наддніпрянщини. Він був людиною досить високого зросту (близько 175 см), на обличчі різко виступав ніс з горбинкою, а також тонко окреслені, відносно неширокі скули.

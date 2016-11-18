@@ -5,7 +5,7 @@ import header from '../blocks/header/header';
 import navigation from '../blocks/nav-menu/nav-menu';
 import menu from '../blocks/menu/menu';
 import money from '../blocks/money/money';
-import games from '../blocks/games-of-thrones/games-of-thrones';
+import sarkofag_view from '../blocks/sarkofag-view/sarkofag-view';
 
 $('document').ready(function() {
     // $(window).on('beforeunload', function() {
@@ -20,6 +20,7 @@ $('document').ready(function() {
 
     //Add parallax to money module
     money();
+    sarkofag_view();
     games();
 
 });
