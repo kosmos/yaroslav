@@ -1,0 +1,17 @@
+.section-appearance {
+	background-color: black;
+	color: white;
+	padding: 14.375rem 0;
+	text-align: center;
+
+	&__second-header {
+		text-transform: uppercase;
+		font-family: $font-serif;
+		font-weight: 100;
+		padding-top: 2.5rem;
+	}
+
+	&__reconstruction {
+		margin: 2.5rem auto;
+	}
+}
