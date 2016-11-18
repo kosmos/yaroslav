@@ -33,4 +33,9 @@ $reconstruction-line-width: 200%;
 	&__line.is-right {
 		transform: rotate(-45deg);
 	}
+
+	&__bg {
+		position: absolute;
+		height: 80%;
+	}
 }

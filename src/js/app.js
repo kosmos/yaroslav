@@ -8,9 +8,9 @@ import money from '../blocks/money/money';
 import sarkofag_view from '../blocks/sarkofag-view/sarkofag-view';
 
 $('document').ready(function() {
-    $(window).on('beforeunload', function() {
-        $(window).scrollTop(0);
-    });
+    // $(window).on('beforeunload', function() {
+    //     $(window).scrollTop(0);
+    // });
     backtop();
     preview();
     header();
