@@ -4,6 +4,10 @@
         color: #ffffff;
         font-family: $font-serif;
         text-align: center;
+        background-image: url(../img/sarkofag-view-background.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom;
     }
 
     &__line1 {
