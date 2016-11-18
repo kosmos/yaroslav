@@ -1,0 +1,10 @@
+.h2 {
+	font-family: $font-sans-serif;
+	font-size: 3rem;
+	text-align: center;
+	letter-spacing: 0.1em;
+
+	&_color_white {
+		color: white;
+	}
+}
