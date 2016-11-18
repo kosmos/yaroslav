@@ -1,0 +1,39 @@
+.about-governing {
+    //height: 100vh;
+    //position: absolute;
+    //top: 0%;
+    //left: 0%;
+    display: block;
+    overflow: hidden;
+    /*        transition: all .5s linear 0s;*/
+
+    &__block {
+        height: 100%;
+        position: relative;
+    }
+
+    &__block1 {
+        display: inline-block;
+        position: relative;
+        &_diagonal_white {
+
+            &:after {
+                content: '';
+                position: absolute;
+                margin-top: 0vw;
+                right: 0;
+                width: 0;
+                height: 100%;
+                border-style: solid;
+                border-width: 100vw 25vw 0vh 0vh;
+                border-color: transparent #ffffff transparent transparent;
+                z-index: 1;
+                // transition: all 1s linear;
+                //opacity: .9;
+            }
+        }
+
+    }
+
+}
+
