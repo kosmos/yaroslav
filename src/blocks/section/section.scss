@@ -1,0 +1,27 @@
+$diagonal-height: 100px;
+
+.section {
+	background-color: white;
+
+	&_background_black {
+		background-color: $black;
+		color: white;
+	}
+
+	&_diagonal {
+		&:before {
+			content: '';
+		    position: absolute;
+		    margin-top: -$diagonal-height;
+		    width: 0;
+		    height: 0;
+		    border-style: solid;
+		    border-width: 0 0 $diagonal-height 100vw;
+
+		}
+	}
+
+	&_background_black#{&}_diagonal:before {
+		border-color: transparent transparent $black transparent;
+	}
+}

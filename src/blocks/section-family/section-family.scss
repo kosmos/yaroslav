@@ -1,0 +1,18 @@
+.section-family {
+	// background-color: $black;
+	// padding: 14.375rem 0;
+
+
+	// Test classes
+	&__persons {
+		display: flex;
+	}
+
+	&__personn {
+		flex-grow: 1;
+	    flex-basis: 0;
+		padding: 1rem;
+		white-space: nowrap;
+	}
+	// -------------
+}

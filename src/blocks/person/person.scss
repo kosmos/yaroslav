@@ -1,0 +1,45 @@
+$per-yaer-color: #4f4f4f;
+$per-border-width: 2px;
+
+.person {
+	text-align: center;
+	font-family: $font-serif;
+
+	&__img-container {
+		position: relative;
+		width: 100%;
+		border-color: $yellow;
+		border-width: $per-border-width;
+		border-style: solid;
+		border-radius: 50%;
+		overflow: hidden;
+		z-index: 4;
+
+		&:after {
+		   content: "";
+		   display: block;
+		   padding-bottom: 100%;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		width: 100%;
+		top: 0px;
+		left: 0px;
+		z-index: 1;
+	}
+
+	&__name {
+		color: white;
+		font-size: 1.066rem;
+		font-size: 1vw;
+		margin: 1.25rem auto;
+	}
+
+	&__year {
+		color: $per-yaer-color;
+		font-size: 0.83rem;
+		font-size: 0.7786vw;
+	}
+}

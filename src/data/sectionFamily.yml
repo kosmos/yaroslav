@@ -1,0 +1,46 @@
+persons:
+    -
+        name: "Володимир"
+        img: ""
+        years: ""
+    -
+        name: "Ізяслав"
+        img: ""
+        years:
+            - "1054–1068"
+            - "1069–1073"
+            - "1077–1078"
+    -
+        name: "Святослав"
+        img: ""
+        years:
+            - "1073–1076"
+    -
+        name: "Всеволод"
+        img: ""
+        years:
+            - "1078–1093"
+    -
+        name: "Ігор"
+        img: ""
+        years: ""
+    -
+        name: "В'ячеслав"
+        img: ""
+        years: ""
+    -
+        name: "Єлисавета"
+        img: ""
+        years: ""
+    -
+        name: "Анастасія"
+        img: ""
+        years: ""
+    -
+        name: "Анна"
+        img: ""
+        years: ""
+    -
+        name: "Агата"
+        img: ""
+        years: ""
