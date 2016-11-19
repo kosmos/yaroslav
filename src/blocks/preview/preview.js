@@ -60,7 +60,7 @@ const preview = () => {
         triggerHook: 0,
         offset: 10,
     })
-        .addIndicators({name: 'PreviewIndicator', colorStart: '  yellow'})
+        // .addIndicators({name: 'PreviewIndicator', colorStart: '  yellow'})
         .setTween(tween)
         // .setTween(tweenPreview)
         .addTo(controller);

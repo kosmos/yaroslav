@@ -30,7 +30,7 @@ const timeline = () => {
         triggerHook: 0.4,
         reverse: true
     })
-        .addIndicators({name: 'TIMELINE', colorStart: '  blue'})
+        // .addIndicators({name: 'TIMELINE', colorStart: '  blue'})
         .setTween(TweenMax.to(_info, .8, {opacity: 1, delay: .3}))
         .on("start", function (t) {
             _timeline.el.toggleClass("is-animate");
