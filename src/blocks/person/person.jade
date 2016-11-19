@@ -1,13 +1,15 @@
 mixin b_person(data)
-	+b.person&attributes(attributes)
-		if data.isKing
-			+e.king
-		+e.img-container
-			case data.img
-				when ""
-					+e("img").img(src="/img/per-bg.jpg")
-				default
-					+e("img").img(src="#{data.img}")
+	+b.person&attributes(attributes)(class=typeof data.isKing ==="undefined" ? "" : "_is_king" )
+		+e.img-and-king
+			if data.isKing
+				+e.king
+			+e.img-container
+				+e.img-overflow
+					case data.img
+						when ""
+							+e("img").img(src="/img/per-bg.jpg")
+						default
+							+e("img").img(src="#{data.img}")
 		+e.name #{data.name}
 		case data.year
 			when ""
