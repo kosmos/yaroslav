@@ -1,0 +1,12 @@
+mixin b_rus-pravda(data)
+  +b.rus-pravda&attributes(attributes)
+    +e.textarea.columns.large-6
+       +e.text3
+        +e.line1 #{data[2]}
+        +e.line2 #{data[3]}
+    +e.imgarea.columns.large-6
+      +e.text1 #{data[0]}
+      +e.text2 #{data[1]}
+      +e.IMG.img1(src="img/rus-pravda-circle.png")
+    +e.clear
+
