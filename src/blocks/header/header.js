@@ -49,7 +49,7 @@ const help = () => {
     });
 
     sceneOver
-        .addIndicators({name: 'Header_Over_Indicator', colorStart: '  green'})
+        // .addIndicators({name: 'Header_Over_Indicator', colorStart: '  green'})
         .setTween(tweenOver)
         .addTo(controller);
 

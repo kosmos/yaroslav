@@ -1,0 +1,14 @@
+include ../paragraph/paragraph
+
+mixin b_timeline(data)
+  +b.SECTION.timeline-history.row.expanded&attributes(attributes)
+    +e.map.small-12.end
+      +e.IMG.map-image(src="/img/roadmap.jpg")
+    +b.timeline
+      +e.UL.inner
+        each item, index in data
+          - var inf = typeof item.text === 'string' ? item.text: null;
+          +e.year(data-info= inf) #{item.year}
+
+    +e.information.small-4.large-centered.columns
+      +b_paragraph(data[1].text)
