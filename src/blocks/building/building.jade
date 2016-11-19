@@ -1,0 +1,6 @@
+include ../h2/h2
+
+mixin b_building(data)
+  +b.building.row.expanded&attributes(attributes)
+    +e.diagonal
+    +b_h2(data.year)
