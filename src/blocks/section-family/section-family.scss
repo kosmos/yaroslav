@@ -9,10 +9,33 @@
 	}
 
 	&__personn {
+		position: relative;
 		flex-grow: 1;
 	    flex-basis: 0;
 		padding: 1rem;
 		white-space: nowrap;
+
+		&::before,
+		&::after{
+		    content: '';
+		    position: absolute;
+		    top: 0;
+		    right: 50%;
+		    border-top: 1px solid #ccc;
+		    width: 50%;
+		    height: 20px;
+		}
+
+		&::after{
+		    right: auto;
+		    left: 50%;
+		    border-left: 1px solid #ccc;
+		}
+
+		&:only-child::after, .tree li:only-child::before {
+			display: none;
+		}
+
 	}
 	// -------------
 }

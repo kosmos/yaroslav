@@ -1,3 +1,13 @@
+include ../person/person
+
+mixin family_iterator(data)
+	ul
+		each item in data
+			li 
+				+b_person(item.person)
+				if item.children
+					+family_iterator(item.children)
+
 mixin b_family-tree(data)
 	+b.family-tree&attributes(attributes)
-		
+		+family_iterator(family)

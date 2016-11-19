@@ -37,8 +37,8 @@
 
 .caption {
 
-    font-family: "Myriad Pro";
-    color: rgb(51, 51, 51);
+    font-family: $font-serif;
+    color: $light-black;
 
     &__big {
         font-size: 2.25rem;

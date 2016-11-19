@@ -24,7 +24,7 @@ const timeline = () => {
     const _yearInfo = $('.timeline__year[data-info]');
 
     var scene = new ScrollMagic.Scene({
-        duration: $(".timeline-history__map").height()-100, //450,
+        duration: $(".timeline-history__map").height()-50, //450,
         offset: $(".timeline-history__map").height()/2,
         triggerElement: _timeline.trigger,
         triggerHook: 0.4,

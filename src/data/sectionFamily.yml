@@ -1,46 +1,73 @@
-persons:
+family:
     -
-        name: "Володимир"
-        img: ""
-        years: ""
-    -
-        name: "Ізяслав"
-        img: ""
-        years:
-            - "1054–1068"
-            - "1069–1073"
-            - "1077–1078"
-    -
-        name: "Святослав"
-        img: ""
-        years:
-            - "1073–1076"
-    -
-        name: "Всеволод"
-        img: ""
-        years:
-            - "1078–1093"
-    -
-        name: "Ігор"
-        img: ""
-        years: ""
-    -
-        name: "В'ячеслав"
-        img: ""
-        years: ""
-    -
-        name: "Єлисавета"
-        img: ""
-        years: ""
-    -
-        name: "Анастасія"
-        img: ""
-        years: ""
-    -
-        name: "Анна"
-        img: ""
-        years: ""
-    -
-        name: "Агата"
-        img: ""
-        years: ""
+        person:
+            name: "Володимир"
+            img: "/img/per-volodymyr.jpg"
+            isKing: true
+            years: ""
+        children:
+            -
+                person:
+                    name: "Ярослав Мудрий"
+                    img: "/img/per-yaroslav.jpg"
+                    isKing: true
+                    years: ""
+                children:
+                    -
+                        person:
+                            name: "Володимир"
+                            img: ""
+                            years: ""
+                    -
+                        person:
+                            name: "Ізяслав"
+                            img: "/img/per-izyaslav.jpg"
+                            isKing: true
+                            years:
+                                - "1054–1068"
+                                - "1069–1073"
+                                - "1077–1078"
+                    -
+                        person:
+                            name: "Святослав"
+                            img: "/img/per-svyatoslav.jpg"
+                            isKing: true
+                            years:
+                                - "1073–1076"
+                    -
+                        person:
+                            name: "Всеволод"
+                            img: "/img/per-vsevolod.jpg"
+                            isKing: true
+                            years:
+                                - "1078–1093"
+                    -
+                        person:
+                            name: "Ігор"
+                            img: ""
+                            years: ""
+                    -
+                        person:
+                            name: "В'ячеслав"
+                            img: ""
+                            years: ""
+                    -
+                        person:
+                            name: "Єлисавета"
+                            img: "/img/per-elisaveta.jpg"
+                            years: ""
+                    -
+                        person:
+                            name: "Анастасія"
+                            img: "/img/per-anastasia.jpg"
+                            years: ""
+                    -
+                        person:
+                            name: "Анна"
+                            img: "/img/per-anna.jpg"
+                            years: ""
+                    -
+                        person:
+                            name: "Агата"
+                            img: "/img/per-agata.jpg"
+                            years: ""
