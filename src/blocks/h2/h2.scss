@@ -7,4 +7,12 @@
 	&_color_white {
 		color: white;
 	}
+
+	&_color_yellow {
+		color: $yellow;
+	}
+
+	&_font_caps {
+		text-transform: uppercase;
+	}
 }
