@@ -5,7 +5,7 @@ $ft-border-radius: 1vw;
 	width: 100%;
 
 	& ul {
-		padding-top: $ft-link-height;
+		padding-top: 2 * $ft-link-height;
 		position: relative;
 		transition: all 0.5s;
 		display: flex;
@@ -73,6 +73,6 @@ $ft-border-radius: 1vw;
 		left: 50%;
 		border-left: 1px solid #ccc;
 		width: 0;
-		height: $ft-link-height;
+		height: 2 * $ft-link-height;
 	}
 }
