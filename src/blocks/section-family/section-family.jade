@@ -1,12 +1,10 @@
 include ../h2/h2
 include ../person/person
 include ../section/section
+include ../family-tree/family-tree
 
 mixin b_section-family(data)
 	+b_section()._diagonal._background_black
 		+b.section-family&attributes(attributes)
 			+b_h2("Сім’я")._color_yellow._font_caps
-			+e.persons
-				each person in persons
-					+e.personn
-						+b_person(person)
+			+b_family-tree()

@@ -4,6 +4,8 @@ $per-border-width: 2px;
 .person {
 	text-align: center;
 	font-family: $font-serif;
+	max-width: 8vw;
+	margin: 0 auto;
 
 	&__img-container {
 		position: relative;
@@ -32,14 +34,27 @@ $per-border-width: 2px;
 
 	&__name {
 		color: white;
-		font-size: 1.066rem;
 		font-size: 1vw;
-		margin: 1.25rem auto;
+		margin: 1.25vw auto 0.7786vw;
 	}
 
 	&__year {
 		color: $per-yaer-color;
-		font-size: 0.83rem;
 		font-size: 0.7786vw;
+	}
+
+	&__king {
+		position: absolute;
+		top: 0.3vw;
+		left: 50%;
+		margin-left: -0.9vw;
+		width: 1.8vw;
+		height: 1.5vw;
+		background: $black;
+		background-image: url('../img/korona.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		z-index: 2;
 	}
 }
