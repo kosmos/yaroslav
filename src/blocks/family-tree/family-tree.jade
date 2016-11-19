@@ -1,10 +1,14 @@
 include ../person/person
+include ../couple/couple
 
 mixin family_iterator(data)
 	ul
 		each item in data
 			li 
-				+b_person(item.person)
+				if item.person
+					+b_person(item.person)
+				if item.couple
+					+b_couple(item.couple)
 				if item.children
 					+family_iterator(item.children)
 
