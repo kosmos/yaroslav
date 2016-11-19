@@ -1,17 +1,29 @@
 family:
     -
-        person:
-            name: "Володимир"
-            img: "/img/per-volodymyr.jpg"
-            isKing: true
-            years: ""
+        couple:
+            -
+                name: "Володимир Велики"
+                img: "/img/per-volodymyr.jpg"
+                isKing: true
+                years:
+                    - "978–1015"
+            -
+                name: "Рогнеда"
+                img: "/img/per-rogneda.jpg"
+                years: ""
         children:
             -
-                person:
-                    name: "Ярослав Мудрий"
-                    img: "/img/per-yaroslav.jpg"
-                    isKing: true
-                    years: ""
+                couple:
+                    -
+                        name: "Ярослав Мудрий"
+                        img: "/img/per-yaroslav.jpg"
+                        isKing: true
+                        years:
+                            - "1019–1054"
+                    -
+                        name: "Інгігерда"
+                        img: "/img/per-ingigerda.jpg"
+                        years: ""
                 children:
                     -
                         person:
