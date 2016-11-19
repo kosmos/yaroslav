@@ -1,11 +1,12 @@
 mixin b_person(data)
 	+b.person&attributes(attributes)
-		case data.img
-			when ""
-				+e.img-container
+		if data.isKing
+			+e.king
+		+e.img-container
+			case data.img
+				when ""
 					+e("img").img(src="/img/per-bg.jpg")
-			default
-				+e.img-container
+				default
 					+e("img").img(src="#{data.img}")
 		+e.name #{data.name}
 		case data.year
@@ -13,4 +14,3 @@ mixin b_person(data)
 			default
 				each year in data.years
 					+e.year #{year}
-		
