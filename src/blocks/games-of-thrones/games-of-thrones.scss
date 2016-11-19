@@ -1,0 +1,46 @@
+.games-of-thrones {
+    text-align: center;
+    font-family: $font-serif;
+
+    &__mainname {
+        font-size: 3rem;
+        font-family: $font-sans-serif;
+        margin-top: 7%;
+        position: relative;
+
+        &:before {
+            position: relative;
+            left: 50%;
+            display: block;
+            content: "";
+            width: 0px;
+            border-top: solid 1px $grey;
+            margin: 3.5rem 0 3.25rem -75px;
+            opacity: 0;
+        }
+    }
+
+    &__shortnote {
+        text-transform: uppercase;
+        color: $grey;
+        font-size: 1.125rem;
+        line-height: 1.667;
+        letter-spacing: 0.12em;
+        margin: 0px auto;
+
+        &:after{
+            position: relative;
+            left: 50%;
+            display: block;
+            content: "";
+            width: 0px;
+            border-top: solid 1px $grey;
+            margin: 3.5rem 0 3.25rem -75px;
+            opacity: 0;
+        }
+    }
+
+    &__details {
+        margin: 2% auto 5%;
+    }
+}

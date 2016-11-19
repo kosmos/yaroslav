@@ -12,19 +12,19 @@ const sarkofag_view = () => {
     let t3 = new TimelineLite();
 
     t1
-        .to('.sarkofag-view__line1', 2, {width: 449})
-        .to('.sarkofag-view__line1', 1, {height: 25})
-        .to('.sarkofag-view__text3', 3, {opacity: 100});
+        .to('.sarkofag-view__line1', 1.0, {width: 449})
+        .to('.sarkofag-view__line1', 0.5, {height: 25})
+        .to('.sarkofag-view__text3', 1, {opacity: 1});
 
     t2
-        .to('.sarkofag-view__line2', 2, {width: 373})
-        .to('.sarkofag-view__line2', 1, {height: 25})
-        .to('.sarkofag-view__text4', 3, {opacity: 100});
+        .to('.sarkofag-view__line2', 1.0, {width: 373})
+        .to('.sarkofag-view__line2', 0.5, {height: 25})
+        .to('.sarkofag-view__text4', 1, {opacity: 1});
 
     t3
-        .to('.sarkofag-view__line3', 2, {width: 373})
-        .to('.sarkofag-view__line3', 1, {height: 25})
-        .to('.sarkofag-view__text5', 3, {opacity: 100});
+        .to('.sarkofag-view__line3', 1.0, {width: 373})
+        .to('.sarkofag-view__line3', 0.5, {height: 25})
+        .to('.sarkofag-view__text5', 1, {opacity: 1});
 
     let slideParallaxScene = new ScrollMagic.Scene({
         triggerElement: ".sarkofag-view",
