@@ -10,6 +10,7 @@ import games from '../blocks/games-of-thrones/games-of-thrones';
 import timeline from '../blocks/timeline/timeline';
 import building from '../blocks/building/building';
 import h2 from '../blocks/h2/h2';
+import reconstruction from '../blocks/reconstruction/reconstruction';
 
 $('document').ready(function() {
     // $(window).on('beforeunload', function() {
@@ -21,6 +22,7 @@ $('document').ready(function() {
     navigation();
     menu();
     h2();
+    reconstruction();
 
 
     //Add parallax to money module
