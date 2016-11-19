@@ -1,0 +1,5 @@
+mixin b_building-part(title, src)
+  +b.building-part&attributes(attributes)
+    +e.HR.line
+    +e.IMG.thumbnail(src="/img/#{src}.jpg")
+    +e.title= title

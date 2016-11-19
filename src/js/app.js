@@ -8,6 +8,7 @@ import money from '../blocks/money/money';
 import sarkofag_view from '../blocks/sarkofag-view/sarkofag-view';
 import games from '../blocks/games-of-thrones/games-of-thrones';
 import timeline from '../blocks/timeline/timeline';
+import building from '../blocks/building/building';
 
 $('document').ready(function() {
     // $(window).on('beforeunload', function() {
@@ -25,5 +26,6 @@ $('document').ready(function() {
     sarkofag_view();
     games();
     timeline();
+    building();
 
 });
