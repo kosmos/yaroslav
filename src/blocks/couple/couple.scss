@@ -1,0 +1,57 @@
+.couple {
+	position: relative;
+	width: 30vw;
+	padding-top: 12vw;
+	margin: 0px auto;
+
+	&__rings {
+		position: absolute;
+		background-image: url('../img/rings.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		top: 4vw;
+		left: 50%;
+		width: 2rem;
+		margin-left: -1rem;
+		height: 1rem;
+
+		&::before {
+			position: absolute;
+			top: 0.5rem;
+			left: 50%;
+			margin-left: 1vw;
+			content: '';
+			width: 5vw;
+			height: 1px;
+			border-top: 1px solid white;
+		}
+
+		&::after {
+			position: absolute;
+			top: 0.5rem;
+			left: 50%;
+			margin-left: -6vw;
+			content: '';
+			width: 5vw;
+			height: 1px;
+			border-top: 1px solid white;
+		}
+
+	}
+
+	&__person-1 {
+		position: absolute;
+		width: 8vw;
+		top: 0px;
+		left: 0px;
+
+	}
+
+	&__person-2 {
+		position: absolute;
+		width: 10vw;
+		top: 0px;
+		right: 0px;
+	}
+}

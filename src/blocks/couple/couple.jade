@@ -1,0 +1,10 @@
+include ../person/person
+
+mixin b_couple(data)
+	+b.couple&attributes(attributes)
+		+e.person-1
+			+b_person(data[0])
+		+e.rings
+		+e.person-2
+			+b_person(data[1])
+		
