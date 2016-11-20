@@ -4,7 +4,7 @@ import ScrollMagic from 'scrollmagic';
 
 const sarkofag_view = () => {
 
-    if (window.innerWidth > 1470 ){
+    if (window.innerWidth > 960 ){
 
         let controller = new ScrollMagic.Controller();
 
