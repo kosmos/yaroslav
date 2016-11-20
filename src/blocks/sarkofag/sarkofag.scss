@@ -5,7 +5,8 @@
     &__name {
         display: block;
         text-align: center;
-        font-size: 4em;
+        font-size: 4rem;
+        margin-top: 8rem
     }
 
     &__box {
@@ -28,7 +29,7 @@
         padding-top: 15%;
     }
 
-    @media #{(min-width: 0px) and(max-width: 640px)} {
+    @media #{(min-width: 0px) and(max-width: 639px)}{
         &__box {
             padding-top: 10px;
         }
@@ -36,5 +37,17 @@
         &__date1939 {
             padding-top: 5px;
         }
+
+        &__img {
+            padding: 3rem;
+        }
+
+        &__photo {
+            padding: 3rem;
+        }
+
+
     }
 }
+
+
