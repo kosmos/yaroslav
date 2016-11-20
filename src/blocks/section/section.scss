@@ -13,10 +13,10 @@ $diagonal-height: 100px;
 			content: '';
 		    position: absolute;
 		    margin-top: -$diagonal-height;
-		    width: 0;
-		    height: 0;
+		    width: 0px;
+		    height: 0px;
 		    border-style: solid;
-		    border-width: 0 0 $diagonal-height 100vw;
+		    border-width: 0px 0px $diagonal-height 100vw;
 		}
 	}
 
