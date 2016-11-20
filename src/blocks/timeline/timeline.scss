@@ -31,6 +31,11 @@
         text-align: center;
         transition: all .5s linear;
         opacity: 0;
+        color: $light-black;
+
+        .paragraph {
+            font-size: .75rem;
+        }
     }
 }
 
