@@ -11,6 +11,8 @@ import timeline from '../blocks/timeline/timeline';
 import building from '../blocks/building/building';
 import h2 from '../blocks/h2/h2';
 import reconstruction from '../blocks/reconstruction/reconstruction';
+import footer from '../blocks/footer/footer';
+import sectionMap from '../blocks/section-map/section-map';
 
 $('document').ready(function() {
     // $(window).on('beforeunload', function() {
@@ -23,6 +25,8 @@ $('document').ready(function() {
     menu();
     h2();
     reconstruction();
+    sectionMap();
+    footer();
 
 
     //Add parallax to money module
