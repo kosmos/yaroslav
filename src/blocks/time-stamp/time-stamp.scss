@@ -1,4 +1,7 @@
 .time-stamp {
+
+    padding-left: 2rem;
+
     &__date {
         font-family: $font-sans-serif;
         font-size: 32px;
@@ -16,4 +19,5 @@
     &_width_69perc {
         width:  69%;
     }
+
 }

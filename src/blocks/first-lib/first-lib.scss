@@ -8,15 +8,15 @@
     }
 
     &__text1{
-        font-size: 4em;
+        font-size: 4rem;
         color: #{$yellow};
     }
 
     &__text2{
-        font-size: 2.2em;
+        font-size: 2.2rem;
         padding-top: 2.8%;
         margin: 0 auto;
-        width: 27%;
+        width: 28rem;
     }
 
     &__smalltext{
@@ -29,7 +29,7 @@
 
     &__text3{
         padding-top: 2.5%;
-        font-size: 2.5em;
+        font-size: 2.5rem;
         text-transform: uppercase;
         letter-spacing: 2px;
     }
@@ -40,11 +40,11 @@
     }
 
     &__number{
-        font-size: 5.5em ;
+        font-size: 5.5rem ;
     }
 
     &__books{
-        font-size: 3em;
+        font-size: 3rem;
     }
 
     &__line2{
@@ -53,7 +53,7 @@
 
     &__bigletter{
         line-height: 0.7;
-        font-size: 9em;
+        font-size: 9rem;
         color: #{$yellow};
         float: left;
         margin-right: 2%;
@@ -61,13 +61,20 @@
 
     &__text5 {
         padding-top: 9%;
+
     }
 
     &__text7 {
         width: 92%;
     }
 
-    &__img1 {
-        padding-left: 0 !important;
+    @media #{(min-width: 0px) and (max-width: 1023px)} {
+
+        &__text5 {
+            padding-bottom: 5%;
+            padding-left: 2%;
+        }
     }
+
+
 }
