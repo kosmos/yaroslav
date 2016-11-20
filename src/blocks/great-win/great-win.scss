@@ -1,6 +1,6 @@
 .great-win {
 
-    &__text{
+    &__text {
         text-align: center;
     }
 
@@ -57,7 +57,7 @@
         padding-top: 2.4%;
     }
 
-    @media #{(min-width: 1400px) and (max-width: 1620px)}{
+    @media #{(min-width: 1400px) and (max-width: 1620px)} {
         &__toptext {
             font-size: 39px;
             letter-spacing: 3px;
@@ -68,7 +68,7 @@
         }
     }
 
-    @media #{(min-width: 1024px) and (max-width: 1399px)}{
+    @media #{(min-width: 1024px) and (max-width: 1399px)} {
         &__main {
             padding-top: 4%;
         }

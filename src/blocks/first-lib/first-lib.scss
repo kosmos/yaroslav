@@ -1,25 +1,26 @@
 .first-lib {
-    &{
+    & {
         font-family: $font-sans-serif;
     }
-    &__line1{
+
+    &__line1 {
         padding-top: 12%;
         text-align: center;
     }
 
-    &__text1{
+    &__text1 {
         font-size: 4em;
         color: #{$yellow};
     }
 
-    &__text2{
+    &__text2 {
         font-size: 2.2em;
         padding-top: 2.8%;
         margin: 0 auto;
         width: 27%;
     }
 
-    &__smalltext{
+    &__smalltext {
         font-size: 0.85em;
         padding-top: 0.4%;
         text-transform: uppercase;
@@ -27,31 +28,31 @@
         color: #{$grey};
     }
 
-    &__text3{
+    &__text3 {
         padding-top: 2.5%;
         font-size: 2.5em;
         text-transform: uppercase;
         letter-spacing: 2px;
     }
 
-    &__text4{
+    &__text4 {
         color: #{$yellow};
         padding-bottom: 5.2%;
     }
 
-    &__number{
-        font-size: 5.5em ;
+    &__number {
+        font-size: 5.5em;
     }
 
-    &__books{
+    &__books {
         font-size: 3em;
     }
 
-    &__line2{
+    &__line2 {
         background-color: #f5f5f5;
     }
 
-    &__bigletter{
+    &__bigletter {
         line-height: 0.7;
         font-size: 9em;
         color: #{$yellow};
