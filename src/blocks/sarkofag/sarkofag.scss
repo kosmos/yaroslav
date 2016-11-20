@@ -1,4 +1,7 @@
 .sarkofag {
+    display: block;
+    height: 100%;
+
     &__name {
         display: block;
         text-align: center;
@@ -10,14 +13,15 @@
     }
 
     &__text {
+        display: block;
         padding-top: 5%;
         text-align: center;
         text-transform: uppercase;
         padding-bottom: 7%;
         font-family: $font-serif;
         color: #{$grey};
-        font-size: 1.67em;
-        letter-spacing: 0.1em;
+        font-size: 1.67rem;
+        letter-spacing: 0.1rem;
     }
 
     &__photo {

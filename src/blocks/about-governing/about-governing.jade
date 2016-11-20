@@ -2,17 +2,21 @@ include ../h2/h2
 
 mixin b_about-governing(data)
   +b.about-governing.expanded.column.row&attributes(attributes)
-    +e.block.small-6.columns
+    +e.block.small-12.medium-6.large-6.columns
       +e.block1._diagonal_white
         +e.IMG.photo(src="img/about-governing-photo.png")
-    +e.block.small-6.columns
-      +e.text0
-        +b_h2(data[0])._font_caps
-      +e.text1 #{data[1]}
-      +e.text2 #{data[2]}
-      +e.text3 #{data[3]}
-      +e.text4 #{data[4]}
-      +e.text5 #{data[5]}
-      +e.text6 #{data[6]}
-
+    +e.block2.small-12.medium-6.large-6.columns
+      +e.text0 #{data[0]}
+      +e.textblock1
+        +e.text1 #{data[1]}
+        +e.text2 #{data[2]}
+        +e.text3 #{data[3]}
+      +e.textblock2
+        +e.text4 #{data[4]}
+        +e.text5 #{data[5]}
+      +e.textblock3
+        +e.text6 #{data[6]}
+        +e.text7 #{data[7]}
+      +e.textblock4
+        +e.text8 #{data[8]}
     //+b.SPAN.close

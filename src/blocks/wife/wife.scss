@@ -1,0 +1,90 @@
+.wife {
+
+    display:block;
+    width: 100%;
+    height: 100%;
+    margin-top: 8rem;
+    margin-bottom: 0rem;
+
+    &__imgarea {
+        text-align: right;
+        font-family: $font-sans-serif;
+        color: #{$yellow};
+    }
+
+    &__img1 {
+        display: inline-block;
+        float: right;
+        margin-top: 5rem;
+    }
+
+    &__textarea {
+        font-family: $font-serif;
+        text-align: left;
+    }
+
+    &__text3 {
+        margin-left: -2rem;
+        margin-top: 0rem;
+        display:inline-block;
+        text-align: right;
+    }
+
+    &__line {
+        font-size: 1.125rem;
+        display: block;
+        white-space: nowrap;
+    }
+
+    &__line3 {
+        font-size: 1.35rem;
+        color: #898989;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+
+
+    &__text1 {
+        position: absolute;
+        display: inline-block;
+        font-size: 9rem;
+        color: #{$yellow};
+        line-height: 1.2;
+        margin-left: -18.1rem;
+    }
+
+    &__text2 {
+        position: absolute;
+        display: inline-block;
+        font-size: 9rem;
+        margin-top: 9rem;
+        color: #{$yellow};
+        line-height: 1.2;
+        margin-left: -8.7rem;
+    }
+
+    &__clear {
+        display: block;
+        clear: both;
+    }
+
+    @media #{(min-width: 0px) and (max-width: 1023px)} {
+
+        &__imgarea {
+            display: none;
+        }
+
+        &__textarea {
+            text-align: center;
+            padding-bottom: 8rem;
+        }
+
+        &__text3 {
+            text-align: center;
+        }
+
+
+    }
+
+}

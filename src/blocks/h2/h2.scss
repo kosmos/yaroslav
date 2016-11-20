@@ -3,6 +3,7 @@
 	font-size: 3rem;
 	text-align: center;
 	letter-spacing: 0.1em;
+    font-weight: normal;
 
 	&_color_white {
 		color: white;
@@ -15,4 +16,12 @@
 	&_font_caps {
 		text-transform: uppercase;
 	}
+
+    &_font-size_4rem {
+       font-size: 4rem;
+    }
+
+    &_letter-spacing_0 {
+      letter-spacing: 0em;
+    }
 }
