@@ -8,15 +8,45 @@
 
     &__imagearea {
         position: relative;
+        font-family: $font-sans-serif;
+        color: #{$yellow};
+    }
+
+    &__textarea {
+        font-family: $font-serif;
+        text-align: right;
+    }
+
+    &__text3 {
+        margin-right: -2rem;
+        margin-top: 24rem;
+        display:inline-block;
+        text-align: left;
+    }
+
+    &__line {
+        font-size: 1rem;
+        display: block;
+        white-space: nowrap;
     }
 
     &__text1 {
         position: absolute;
         display: inline-block;
+        font-size: 9rem;
+        color: #{$yellow};
+        line-height: 1.2;
+        margin-left: -18.1rem;
     }
+
     &__text2 {
         position: absolute;
         display: inline-block;
+        font-size: 9rem;
+        margin-top: 9rem;
+        color: #{$yellow};
+        line-height: 1.2;
+        margin-left: -8.7rem;
     }
 
 	&__clear {
