@@ -4,7 +4,7 @@ include ../section/section
 include ../family-tree/family-tree
 
 mixin b_section-family(data)
-	+b_section()._diagonal._background_black
+	+b_section()._diagonal._background_black(id='#{menu.links[6]}')
 		+b.section-family&attributes(attributes)
 			+b_h2("Сім’я")._color_yellow._font_caps
 			+b_family-tree()

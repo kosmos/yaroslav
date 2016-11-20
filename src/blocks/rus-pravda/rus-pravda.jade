@@ -1,5 +1,5 @@
 mixin b_rus-pravda(data)
-  +b.rus-pravda&attributes(attributes)
+  +b.rus-pravda&attributes(attributes)(id='#{menu.links[5]}')
     +e.textarea.columns.small-6.large-6
       +e.text3
         +e.line #{data[2]}
@@ -14,4 +14,3 @@ mixin b_rus-pravda(data)
         +e.text2 #{data[1]}
         +e.IMG.img1(src="img/rus-pravda-circle.png")
     +e.clear
-
