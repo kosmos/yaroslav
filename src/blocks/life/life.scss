@@ -6,10 +6,10 @@
         width: 100%;
         padding-left: auto;
         padding-right: auto;
-        font-size: 10em;
+        font-size: 10rem;
         font-family: $font-sans-serif;
         color: #{$yellow};
-        padding-top: 10%;
+        padding-top: 6rem;
 
     }
 
@@ -18,7 +18,7 @@
         width: 100%;
         padding-left: auto;
         padding-right: auto;
-        font-size: 1.8em;
+        font-size: 1.8rem;
         font-family: $font-serif;
         padding-top: 10%;
         text-transform: uppercase;
@@ -34,12 +34,12 @@
         padding-top: 5%;
         text-transform: uppercase;
         color: #{$yellow};
-        font-size: 3.1em;
-        letter-spacing: 0.17em;
+        font-size: 3.1rem;
+        letter-spacing: 0.17rem;
     }
 
     &__centeredtext3 {
-        width: 29%;
+        max-width: 25rem;
         margin: 0 auto;
         font-family: $font-serif;
         padding-top: 5%;
