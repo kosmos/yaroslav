@@ -1,0 +1,19 @@
+mixin b_wife(data)
+  +b.wife&attributes(attributes)
+    +e.imgarea.columns.small-12.middle-12.large-5
+      +e.IMG.img1(src="img/wife-photo.png")
+    +e.textarea.columns.small-12.middle-12.large-7
+      +e.text3
+        +e.line1
+          +b_h2(data[0])
+        +e.line2
+          +b_h2(data[1])._color_yellow._font-size_4rem._letter-spacing_0
+        +e.line3 #{data[2]}
+        +e.line #{data[3]}
+        +e.line #{data[4]}
+        +e.line #{data[5]}
+        +e.line #{data[6]}
+        +e.line #{data[7]}
+        +e.line #{data[8]}
+        +e.line #{data[9]}
+    +e.clear
