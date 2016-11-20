@@ -60,5 +60,5 @@ rules:
     - convention: strictbem
 
   zero-unit:
-    - 1
-    - include: true
+    - 0
+    - include: false
