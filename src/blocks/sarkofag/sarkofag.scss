@@ -6,7 +6,7 @@
         display: block;
         text-align: center;
         font-size: 4rem;
-        margin-top: 8rem
+        margin-top: 8rem;
     }
 
     &__box {
@@ -29,7 +29,7 @@
         padding-top: 15%;
     }
 
-    @media #{(min-width: 0px) and(max-width: 639px)}{
+    @media #{(min-width: 0px) and(max-width: 639px)} {
         &__box {
             padding-top: 10px;
         }
@@ -49,5 +49,3 @@
 
     }
 }
-
-
