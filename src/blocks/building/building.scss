@@ -2,7 +2,6 @@ $diagonal-height: 10vw;
 
 .building {
 
-
     &__diagonal {
         &:before {
             content: '';
@@ -100,7 +99,7 @@ $diagonal-height: 10vw;
             height: 300px;
             color: $yellow;
             background-color: $yellow;
-            border: 0px none;
+            border: 0;
         }
     }
 }

@@ -13,7 +13,7 @@ const reconstruction = () => {
     		triggerElement: '.reconstruction',
     		triggerHook: 0.7
     	});
-        let windowWidth = $(window).width() / 2;
+        let windowWidth = $(window).width() / 1.8;
         let tween = new TimelineMax()
             .fromTo('.reconstruction', 0.5, {opacity:0}, {opacity:1, ease:Power1.easeOut})
             .fromTo('.reconstruction', 1, {borderRadius: '100%'}, {borderRadius: '0%', ease:Power1.easeOut})

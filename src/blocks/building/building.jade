@@ -2,7 +2,7 @@ include ../h2/h2
 include ../building-part/building-part
 
 mixin b_building(data)
-  +b.SECTION.building.row.expanded&attributes(attributes)(id='#{menu.links[3]}')
+  +b("section").building.row.expanded&attributes(attributes)(id='#{menu.links[3]}')
     +e.diagonal
     +b_h2(data.year).__year.small-3.small-centered
     +e.title.small-9.small-centered #{data.title}
