@@ -1,6 +1,4 @@
 .life {
-    /*padding-top: 6%;*/
-
     &__livedates {
         text-align: center;
         width: 100%;
@@ -38,7 +36,7 @@
         letter-spacing: 0.17em;
     }
 
-    &__centeredtext3{
+    &__centeredtext3 {
         width: 29%;
         margin: 0 auto;
         font-family: $font-serif;
@@ -46,4 +44,3 @@
     }
 
 }
-
