@@ -16,7 +16,7 @@
 		white-space: nowrap;
 
 		&::before,
-		&::after{
+		&::after {
 		    content: '';
 		    position: absolute;
 		    top: 0px;
@@ -26,7 +26,7 @@
 		    height: 20px;
 		}
 
-		&::after{
+		&::after {
 		    right: auto;
 		    left: 50%;
 		    border-left: 1px solid #ccc;
