@@ -1,16 +1,6 @@
 .money {
-
-
     &__main {
-/*        background-image: url("../img/money_background.png");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: 100%;*/
         position: relative;
-        /*overflow: hidden;*/
-/*        width: 100%;
-        height: 0px;*/
-        /*padding-bottom:70%;*/
         padding: 0 0;
     }
 
@@ -30,7 +20,7 @@
         width: 90%;
         margin: 0 auto;
         max-width: 1140px;
-        pasition: relative;
+        position: relative;
         z-index: 2;
     }
 
@@ -47,8 +37,8 @@
 
     &__text1 {
         font-size: 4.17em;
-        font-family: Playfair Display,serif;
-        opacity: 1
+        font-family: Playfair Display, serif;
+        opacity: 1;
     }
 
     &__text2 {
@@ -56,9 +46,9 @@
         font-size: 1.58em;
         text-transform: uppercase;
         text-align: center;
-        font-family: Playfair Display,serif;
+        font-family: Playfair Display, serif;
         font-style: regular;
-        opacity: 1
+        opacity: 1;
     }
 
     &__float_left {
@@ -114,7 +104,7 @@
         }
     }
 
-    @media #{(min-width: 670px) and(max-width: 800px)}{
+    @media #{(min-width: 670px) and(max-width: 800px)} {
 
         &__main {
             background-size: 0 0;
@@ -133,7 +123,7 @@
         }
     }
 
-    @media #{(min-width: 0px) and(max-width: 669px)}{
+    @media #{(min-width: 0px) and(max-width: 669px)} {
         &__main {
             background-size: 0 0;
         }

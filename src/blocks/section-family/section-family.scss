@@ -16,17 +16,17 @@
 		white-space: nowrap;
 
 		&::before,
-		&::after{
+		&::after {
 		    content: '';
 		    position: absolute;
-		    top: 0;
+		    top: 0px;
 		    right: 50%;
 		    border-top: 1px solid #ccc;
 		    width: 50%;
 		    height: 20px;
 		}
 
-		&::after{
+		&::after {
 		    right: auto;
 		    left: 50%;
 		    border-left: 1px solid #ccc;

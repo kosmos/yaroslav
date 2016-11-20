@@ -11,7 +11,7 @@
         content: "";
         display: block;
         background-color: white;
-        background-image: url(../img/sarkofag-view-background.svg);
+        background-image: url('../img/sarkofag-view-background.svg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
@@ -21,8 +21,6 @@
     }
 
     &__line1 {
-        /*width: 449px;
-        height: 25px;*/
         width: 0px;
         height: 0px;
         border-left-width: 1px;
@@ -36,8 +34,6 @@
     }
 
     &__line2 {
-/*        width: 373px;
-        height: 25px;*/
         width: 0px;
         height: 0px;
         border-left-width: 1px;
@@ -52,8 +48,6 @@
     }
 
     &__line3 {
- /*       width: 373px;
-        height: 25px;*/
         width: 0px;
         height: 0px;
         border-right-width: 1px;
@@ -68,8 +62,8 @@
 
     }
 
-    &__text3{
-        font-color: white;
+    &__text3 {
+        color: white;
         position: absolute;
         width: 300px;
         opacity: 0;
@@ -80,8 +74,8 @@
 
     }
 
-    &__text4{
-        font-color: white;
+    &__text4 {
+        color: white;
         position: absolute;
         width: 300px;
         opacity: 0;
@@ -91,8 +85,8 @@
         margin-right: -10%;
     }
 
-    &__text5{
-        font-color: white;
+    &__text5 {
+        color: white;
         position: absolute;
         width: 300px;
         opacity: 0;
@@ -125,6 +119,7 @@
         width: 40%;
         float: right;
         clear: right;
+		color: $yellow;
     }
 
     &__text2 {
@@ -135,6 +130,7 @@
         padding-top: 3%;
         float: right;
         clear: right;
+		color: $yellow;
     }
 
     &__img {
